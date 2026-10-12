@@ -51,4 +51,4 @@ We did not change the skill after the test. No failure pointed to a gap in its i
 - [Run records: model, tool calls, answer hashes](../evals/2026-10-11/results.json)
 - [Grades with quotes](../evals/2026-10-11/grades.json) and the [blinding key](../evals/2026-10-11/blind-key.json)
 
-Tested SKILL.md SHA-256: `aba2bc963180f1ff1a12e1265b32f0f0eebfc68aa56ba4b285ed008bcc3686df`
+Tested SKILL.md (version 0.3.0; later versions are untested) SHA-256: `aba2bc963180f1ff1a12e1265b32f0f0eebfc68aa56ba4b285ed008bcc3686df`
