@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حقيبة البيانات · Data Kit</title>
+<meta name="description" content="٢٨ مصدرًا مؤسسيًا مجانيًا، منها ١١ للأقمار الصناعية، في ملف SKILL.md واحد لـ Claude Code وCodex.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap" dir="rtl" lang="ar">
+<header>
+  <h1>حقيبة البيانات<i>.</i></h1>
+  <div class="sub">٢٨ مصدرًا مؤسسيًا مجانيًا<br>منها ١١ للأقمار الصناعية · لـ Claude Code وCodex</div>
+  <a class="by" href="https://github.com/aeleraqi/data-kit">GitHub ↗</a>
+</header>
+
+<div class="top">
+  <div class="side">
+    <section class="box dl" aria-labelledby="dlH">
+      <span class="tag mono" style="opacity:.8">SKILL.md</span>
+      <h2 id="dlH">نزّل المهارة</h2>
+      <p>تعليمات لاختيار المصدر، وبناء الطلب، ومراجعة الرقم قبل النشر. مرافقة لكتاب صحافة البيانات.</p>
+      <div class="row">
+        <a class="btn" href="SKILL.md" download>افتح SKILL.md <span aria-hidden="true">↓</span></a>
+        <button class="lnk" id="copyBtn" type="button">انسخ المحتوى</button>
+      </div>
+      <span class="msg" id="copyMsg" aria-live="polite"></span>
+    </section>
+
+    <section class="box inst" aria-labelledby="inH">
+      <div class="inst-h">
+        <h2 id="inH">التثبيت</h2>
+        <div class="tabs" role="tablist" aria-label="اختر الأداة">
+          <button role="tab" id="tab-claude" aria-selected="true" type="button">Claude Code</button>
+          <button role="tab" id="tab-codex" aria-selected="false" type="button">Codex</button>
+        </div>
+      </div>
+      <p class="small">احفظ الملف داخل مشروعك هنا:</p>
+      <div class="code mono" id="instPath">.claude/skills/data-kit/SKILL.md</div>
+      <p class="small" id="instHint">ثم اسأل مباشرة: «كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٢؟»</p>
+    </section>
+  </div>
+
+  <section class="box srcbox" id="sources" aria-labelledby="srcH">
+    <div class="hd">
+      <h2 id="srcH">المصادر</h2>
+      <span class="tag">داخل الملف · ٢٨</span>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="det" id="det" hidden></div>
+    <p class="note">اختُبرت الطرق في ١١ أكتوبر ٢٠٢٦. اضغط أي مصدر لترى الطلب. <b>مفتاح</b> = مفتاح مجاني · <b>حساب</b> = حساب مجاني للتنزيل ·
+      <b>خادم</b> = لا يدعم CORS، يعمل من بايثون أو R · <b>يدوي</b> = تنزيل ملفات</p>
+  </section>
+</div>
+
+<section class="cards" id="examples" aria-label="أربعة تحليلات قابلة للتكرار">
+  <article class="box c y">
+    <div class="hd"><span>البنك الدولي</span><span class="num">٢٠٢٢ ← ٢٠٢٥</span></div>
+    <h3>التضخم: مصر في مكان آخر</h3>
+    <div class="bars" id="b1"></div>
+    <p class="foot">أسعار المستهلك، تغيّر سنوي · آخر تحديث ٨ أكتوبر ٢٠٢٦</p>
+    <p class="lesson">سجّل تاريخ التحديث مع الرقم. التحديث القادم قد يعدّل سنة ٢٠٢٥ نفسها.</p>
+  </article>
+
+  <article class="box c p">
+    <div class="hd"><span>Our World in Data ← PIP</span><span>مصر</span></div>
+    <h3>رقم ٢٠٢٥ الذي وُلد في ٢٠٢١</h3>
+    <div class="big">
+      <div><span class="n num">١٫٣٧٪</span><small>تظهر لسنة ٢٠٢٥</small></div>
+      <span class="ar" aria-hidden="true">←</span>
+      <div><span class="n num">٢٠٢١</span><small>سنة المسح الفعلية</small></div>
+    </div>
+    <p class="foot">فقر مدقع · ٣ دولارات يوميًا · تعادل ٢٠٢١ · العمود original_year</p>
+    <p class="lesson">اكتب «وفق آخر مسح متاح (٢٠٢١)»، لا «في ٢٠٢٥».</p>
+  </article>
+
+  <article class="box c v">
+    <div class="hd"><span>ILOSTAT</span><span>مصر · ١٥–٢٤ سنة</span></div>
+    <h3>بطالة الشباب وانقطاع السلسلة</h3>
+    <div class="bars" id="b2"></div>
+    <p class="foot">قيمة ٢٠٢٤ تحمل العلامة B في obs_status</p>
+    <p class="lesson">B تعني انقطاعًا في السلسلة. لا تكتب «تراجعت ٣٫٦ نقطة» قبل أن تعرف ما تغيّر.</p>
+  </article>
+
+  <article class="box c g">
+    <div class="hd"><span>البنك الدولي مقابل صندوق النقد</span><span>مصر</span></div>
+    <h3>تضخم واحد، سنتان مختلفتان</h3>
+    <div class="key"><span><i style="background:var(--accent)"></i>البنك · سنة ميلادية</span><span><i style="background:var(--ink3)"></i>الصندوق · سنة مالية</span></div>
+    <div class="bars" id="b3"></div>
+    <p class="foot">FP.CPI.TOTL.ZG مقابل PCPIPCH · سنة ٢٠٢٤ عند الصندوق = يوليو ٢٠٢٣ – يونيو ٢٠٢٤</p>
+    <p class="lesson">قبل أن تقارن مصدرين، اسأل: أي سنة؟ لا تضع رقمًا ماليًا بجوار رقم ميلادي.</p>
+  </article>
+</section>
+
+<section class="box map" id="map" aria-labelledby="mapH">
+  <div class="hd"><h2 id="mapH">مثال: خريطة من الفضاء</h2><span class="tag">NASA GIBS · بلا مفتاح</span></div>
+  <div class="mapcols">
+    <div class="pair">
+      <figure>
+        <div class="frame"><img src="img/gaza-2023-09-15.jpg" alt="صورة ليلية بالقمر الصناعي لغزة وجنوب فلسطين في ١٥ سبتمبر ٢٠٢٣، الساحل مضاء" width="420" height="420"><svg viewBox="0 0 420 420" aria-hidden="true"><circle cx="150" cy="265" r="58" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="6 4"/><text x="150" y="345" fill="#fff" font-size="17" font-weight="700" text-anchor="middle" font-family="IBM Plex Sans Arabic,sans-serif">غزة</text><text x="70" y="120" fill="#9c9889" font-size="14" text-anchor="middle" font-family="IBM Plex Sans Arabic,sans-serif">البحر المتوسط</text></svg></div>
+        <figcaption>١٥ سبتمبر ٢٠٢٣ <span>قبل الحرب</span></figcaption>
+      </figure>
+      <figure>
+        <div class="frame"><img src="img/gaza-2023-11-13.jpg" alt="الصورة نفسها في ١٣ نوفمبر ٢٠٢٣، ساحل غزة شبه مظلم" width="420" height="420"><svg viewBox="0 0 420 420" aria-hidden="true"><circle cx="150" cy="265" r="58" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="6 4"/><text x="150" y="345" fill="#fff" font-size="17" font-weight="700" text-anchor="middle" font-family="IBM Plex Sans Arabic,sans-serif">غزة</text><text x="70" y="120" fill="#9c9889" font-size="14" text-anchor="middle" font-family="IBM Plex Sans Arabic,sans-serif">البحر المتوسط</text></svg></div>
+        <figcaption>١٣ نوفمبر ٢٠٢٣ <span>بعد خمسة أسابيع</span></figcaption>
+      </figure>
+    </div>
+    <div class="mapside">
+      <p class="ask">«أريد خريطة تُظهر انقطاع الكهرباء في غزة بعد ٧ أكتوبر ٢٠٢٣.»</p>
+      <ol class="steps">
+        <li>اختارت المهارة المصدر ٢٢ (NASA GIBS) للمعاينة السريعة، لأنه لا يحتاج حسابًا.</li>
+        <li>اختارت ليلتين بلا قمر (محاق ١٥ سبتمبر و١٣ نوفمبر) حتى لا يضيء القمر الأرض فيفسد المقارنة.</li>
+        <li>طلبت الطبقة نفسها والمربع نفسه والحجم نفسه للتاريخين، ولم يتغيّر إلا التاريخ.</li>
+      </ol>
+      <div class="code mono" style="white-space:pre;font-size:11.5px">wms.cgi?REQUEST=GetMap&amp;VERSION=1.3.0
+&amp;LAYERS=VIIRS_SNPP_DayNightBand_At_Sensor_Radiance
+&amp;CRS=EPSG:4326&amp;BBOX=30.9,33.9,32.3,35.3
+&amp;WIDTH=560&amp;HEIGHT=560&amp;FORMAT=image/png
+&amp;TIME=2023-11-13</div>
+      <p class="lesson small" style="border-top:1.5px solid var(--ink);padding-top:8px;color:var(--ink)">هذه صورة للعرض، لا قياس. لكتابة «انخفض الضوء بنسبة كذا» انتقل إلى Black Marble (المصدر ٢١) بقيم مصحّحة ومتوسط شهري. ليلة واحدة قد تكون غائمة.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>إعداد عمرو العراقي · إنفوتايمز · رخصة MIT · الإصدار ٠٫٣٫٠ · <a href="SHA256SUMS.txt">SHA-256</a></span>
+  <span>الفكرة مستلهمة من Global Data Kit لإيفغن كيليمنيك</span>
+</footer>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
