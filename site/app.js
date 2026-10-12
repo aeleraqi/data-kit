@@ -25,7 +25,7 @@ bars(document.getElementById("b2"),[{l:"٢٠٢٠",v:17.436,lt:1},{l:"٢٠٢١",v
 const tc=document.getElementById("tab-claude"),tx=document.getElementById("tab-codex"),ip=document.getElementById("instPath"),ih=document.getElementById("instHint");
 function setTab(c){tc.setAttribute("aria-selected",c);tx.setAttribute("aria-selected",!c);
   ip.textContent=c?".claude/skills/data-kit/SKILL.md":".agents/skills/data-kit/SKILL.md";
-  ih.textContent=c?"ثم اسأل مباشرة: «كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٢؟»":"ثم اكتب $data-kit متبوعًا بسؤالك.";}
+  ih.textContent=c?"ثم اسأل مباشرة: «كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٢؟» أو «اعمل بروفايل للسودان»":"ثم اكتب $data-kit متبوعًا بسؤالك.";}
 tc.onclick=()=>setTab(true);tx.onclick=()=>setTab(false);
 const cb=document.getElementById("copyBtn"),cm=document.getElementById("copyMsg");let txt=null;
 fetch("SKILL.md").then(r=>r.ok?r.text():null).then(t=>txt=t).catch(()=>{});

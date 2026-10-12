@@ -105,37 +105,3 @@ figcaption span{font-weight:400;color:var(--ink2)}
 
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--ink2);padding-top:6px}
 
-/* Country profile page */
-.pick{background:var(--surface);gap:8px}
-.pick select{font:inherit;font-size:16px;padding:10px 12px;border:2px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);max-width:100%}
-.idc{background:var(--ink);color:#fff;border-color:var(--ink);flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center}
-.idc h2{font-size:32px}
-.idc .small{color:#d9d6cc}
-.idc dl{display:flex;gap:22px;flex-wrap:wrap;margin:0}
-.idc dt{font-size:12px;color:#d9d6cc}
-.idc dd{margin:0;font-weight:700}
-.grp{font-size:20px;font-weight:700;margin-top:6px}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
-.ind{background:var(--surface);border:1.5px solid var(--border);border-radius:6px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
-.ind .lab{font-size:13px;color:var(--ink2)}
-.ind b{font-size:22px}
-.ind .yr{font-size:12.5px;color:var(--ink2)}
-.ind.old{border-color:var(--accent)}
-.ind .yr em{font-style:normal;font-weight:700;color:var(--accent);border:1.5px solid var(--accent);border-radius:3px;padding:0 4px;margin-inline-start:4px}
-.ind.missing b{font-size:15px;color:var(--ink3)}
-.pcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
-.pc{background:var(--surface);gap:6px}
-.pc h3{font-size:17px}
-.pc .big{font-size:30px;font-weight:700;line-height:1.1}
-.pc .foot{font-size:12px;color:var(--ink2);margin-top:auto}
-.avail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-@media (max-width:700px){.avail{grid-template-columns:1fr}}
-.avail>div{border:2px solid var(--line);border-radius:6px;padding:12px;background:var(--surface)}
-.avail h4{margin:0 0 6px;font-size:15px}
-.avail ul,.traps{margin:0;padding-inline-start:18px;font-size:14px;display:flex;flex-direction:column;gap:3px}
-.traps{background:var(--surface2);border-inline-start:4px solid var(--accent);padding:12px 30px 12px 12px;border-radius:4px}
-.reqs{font-size:13px}
-.reqs summary{cursor:pointer;font-weight:700}
-.reqs ol{display:flex;flex-direction:column;gap:6px;padding-inline-start:20px}
-.reqs .code{white-space:nowrap;font-size:11.5px}
-.navlink{font-weight:700;color:var(--accent);text-decoration:none}
