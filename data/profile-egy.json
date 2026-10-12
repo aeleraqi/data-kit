@@ -1,0 +1,275 @@
+{
+ "country": "EGY",
+ "retrievedAt": "2026-10-11",
+ "note": "Saved responses for the Egypt profile example. World Bank indicators are complete; the other sources keep only the fields the profile uses.",
+ "worldBankCountry": {
+  "url": "https://api.worldbank.org/v2/country/EGY?format=json",
+  "id": "EGY",
+  "iso2Code": "EG",
+  "name": "Egypt, Arab Rep.",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan",
+  "incomeLevel": "Lower middle income",
+  "capitalCity": "Cairo",
+  "latitude": "30.0982",
+  "longitude": "31.2461"
+ },
+ "worldBankLatest": {
+  "url": "https://api.worldbank.org/v2/country/EGY/indicator/SP.POP.TOTL;NY.GDP.PCAP.CD;NY.GDP.MKTP.KD.ZG;FP.CPI.TOTL.ZG;SL.UEM.TOTL.ZS;SL.UEM.1524.ZS;SP.DYN.LE00.IN;SP.URB.TOTL.IN.ZS;IT.NET.USER.ZS;EG.ELC.ACCS.ZS;SE.ADT.LITR.ZS;GC.DOD.TOTL.GD.ZS?source=2&mrnev=1&format=json&per_page=50",
+  "response": [
+   {
+    "page": 1,
+    "pages": 1,
+    "per_page": 50,
+    "total": 12,
+    "sourceid": null,
+    "lastupdated": "2026-10-08"
+   },
+   [
+    {
+     "indicator": {
+      "id": "SP.POP.TOTL",
+      "value": "Population, total"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2025",
+     "value": 118365995,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 0
+    },
+    {
+     "indicator": {
+      "id": "NY.GDP.PCAP.CD",
+      "value": "GDP per capita (current US$)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2025",
+     "value": 3085.80712036204,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 1
+    },
+    {
+     "indicator": {
+      "id": "NY.GDP.MKTP.KD.ZG",
+      "value": "GDP growth (annual %)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2025",
+     "value": 4.39201068570188,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 1
+    },
+    {
+     "indicator": {
+      "id": "FP.CPI.TOTL.ZG",
+      "value": "Inflation, consumer prices (annual %)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2025",
+     "value": 14.0735136645933,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 1
+    },
+    {
+     "indicator": {
+      "id": "SL.UEM.TOTL.ZS",
+      "value": "Unemployment, total (% of total labor force) (modeled ILO estimate)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2025",
+     "value": 6.781,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 1
+    },
+    {
+     "indicator": {
+      "id": "SL.UEM.1524.ZS",
+      "value": "Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2025",
+     "value": 18.293,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 1
+    },
+    {
+     "indicator": {
+      "id": "SP.DYN.LE00.IN",
+      "value": "Life expectancy at birth, total (years)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2024",
+     "value": 71.806,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 0
+    },
+    {
+     "indicator": {
+      "id": "SP.URB.TOTL.IN.ZS",
+      "value": "Urban population (% of total population)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2025",
+     "value": 42.9043204925248,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 0
+    },
+    {
+     "indicator": {
+      "id": "IT.NET.USER.ZS",
+      "value": "Individuals using the Internet (% of population)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2024",
+     "value": 74.64839935,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 0
+    },
+    {
+     "indicator": {
+      "id": "EG.ELC.ACCS.ZS",
+      "value": "Access to electricity (% of population)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2024",
+     "value": 100,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 1
+    },
+    {
+     "indicator": {
+      "id": "SE.ADT.LITR.ZS",
+      "value": "Literacy rate, adult total (% of people ages 15 and above)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2022",
+     "value": 79.4531619498685,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 0
+    },
+    {
+     "indicator": {
+      "id": "GC.DOD.TOTL.GD.ZS",
+      "value": "Central government debt, total (% of GDP)"
+     },
+     "country": {
+      "id": "EG",
+      "value": "Egypt, Arab Rep."
+     },
+     "countryiso3code": "EGY",
+     "date": "2007",
+     "value": 85.7885338345865,
+     "unit": "",
+     "obs_status": "",
+     "decimal": 1
+    }
+   ]
+  ]
+ },
+ "pip": {
+  "url": "https://api.worldbank.org/pip/v1/pip?country=EGY&year=all&povline=3&ppp_version=2021&format=json",
+  "latest": {
+   "reporting_year": 2021,
+   "headcount": 0.0137,
+   "welfare_type": "consumption"
+  }
+ },
+ "ilostat": {
+  "url": "https://rplumber.ilo.org/data/indicator/?id=UNE_DEAP_SEX_AGE_RT_A&ref_area=EGY&sex=SEX_T&classif1=AGE_YTHADULT_Y15-24&timefrom=2020&format=.csv",
+  "rows": [
+   {
+    "time": 2024,
+    "obs_value": 15.254,
+    "obs_status": "B",
+    "source": "BA:582"
+   },
+   {
+    "time": 2023,
+    "obs_value": 16.912,
+    "obs_status": "",
+    "source": "BA:582"
+   }
+  ]
+ },
+ "unhcr": {
+  "hosted": {
+   "url": "https://api.unhcr.org/population/v1/population/?year=2024&coa=EGY&cf_type=ISO",
+   "year": 2024,
+   "coa": "ARE",
+   "coa_iso": "EGY",
+   "refugees": 238014,
+   "asylum_seekers": 638948
+  },
+  "origin": {
+   "url": "https://api.unhcr.org/population/v1/population/?year=2024&coo=EGY&cf_type=ISO",
+   "year": 2024,
+   "coo": "ARE",
+   "coo_iso": "EGY",
+   "refugees": 23736,
+   "asylum_seekers": 55917
+  }
+ },
+ "usgs": {
+  "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2000-01-01&minmagnitude=5&latitude=30.0982&longitude=31.2461&maxradiuskm=500&orderby=magnitude&limit=3",
+  "note": "Radius around the capital, so events may fall outside the country."
+ },
+ "nasaPower": {
+  "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=T2M,PRECTOTCORR&community=RE&latitude=30.0982&longitude=31.2461&format=JSON",
+  "T2M_ANN": 21.82,
+  "PRECTOTCORR_ANN_mm_per_day": 0.16
+ }
+}
