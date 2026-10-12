@@ -4,7 +4,7 @@
 
 By [Amr Eleraqi](https://github.com/aeleraqi), InfoTimes · One SKILL.md · MIT · Version 0.4.0
 
-[**Download SKILL.md**](https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md) · [Read the file](SKILL.md) · [Country profiles](https://aeleraqi.github.io/data-kit/profile.html) · [See the examples](https://aeleraqi.github.io/data-kit/#examples) · [Browse sources](https://aeleraqi.github.io/data-kit/#sources)
+[**Download SKILL.md**](https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md) · [Read the file](SKILL.md) · [See the examples](https://aeleraqi.github.io/data-kit/#examples) · [Browse sources](https://aeleraqi.github.io/data-kit/#sources)
 
 Ask a question the way you'd ask a colleague, in Arabic or English. The skill picks an institutional source, builds the request, fetches the data, and then checks it the way a data editor would: what the indicator measures, which year a number really belongs to, breaks in the series, revisions, units. Every answer ends with an attribution line you can paste into a story and the exact request, so you can run it again next month.
 
@@ -49,7 +49,7 @@ Ask for a profile and the skill builds one from several sources at once: identit
 
 Testing it on Egypt turned up three of those traps. The latest central-government debt figure in the World Bank series is from 2007. UNHCR's internal code for Egypt is `ARE`, the ISO code for the UAE, so requests must use `cf_type=ISO`. And youth unemployment is 18.3% in the World Bank's modeled series but 15.3% in ILOSTAT's survey figure, which carries a break flag. The saved responses are in [data/profile-egy.json](data/profile-egy.json).
 
-The [profile page](https://aeleraqi.github.io/data-kit/profile.html) does the same in the browser for any country, live. The IMF and WHO don't allow browser requests, so the page links to them instead; the skill can fetch them.
+This is part of the skill, not a separate tool: ask in a conversation and the assistant runs the requests described in section 8 of `SKILL.md`, including the IMF and WHO, which only answer server-side requests.
 
 ## Install one file
 
