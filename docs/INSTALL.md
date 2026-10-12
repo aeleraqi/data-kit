@@ -1,5 +1,16 @@
 # Install Data Kit
 
+## Claude app (web or desktop)
+
+1. Download [data-kit.zip](https://aeleraqi.github.io/data-kit/data-kit.zip). It contains one folder, `data-kit/`, with `SKILL.md` inside. Don't unpack it.
+2. Open [claude.ai/customize/skills](https://claude.ai/customize/skills) on the web or in the desktop app (Customize → Skills).
+3. Upload the zip and turn the skill on.
+4. Start a new chat and ask, for example: «كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٢؟»
+
+If you build the zip yourself, zip the `data-kit` folder, not the file alone: a `SKILL.md` at the root of the zip isn't recognised.
+
+## Claude Code and Codex
+
 Download [SKILL.md](https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md) and save it in a folder named `data-kit`. Keep the filename in capitals. The file holds the instructions, 28 source guides, example requests and the licence. It needs no other files.
 
 | Client | In one project | For all your projects on this machine |
