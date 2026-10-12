@@ -51,18 +51,25 @@ Testing it on Egypt turned up three of those traps. The latest central-governmen
 
 This is part of the skill, not a separate tool: ask in a conversation and the assistant runs the requests described in section 8 of `SKILL.md`, including the IMF and WHO, which only answer server-side requests.
 
-## Install one file
+## Install
 
-Save [SKILL.md](https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md) in your project:
+**Claude app (web or desktop).** Download [data-kit.zip](https://aeleraqi.github.io/data-kit/data-kit.zip), open [claude.ai/customize/skills](https://claude.ai/customize/skills) (Customize → Skills), upload the zip without unpacking it, and turn the skill on. Then start a new chat.
 
-```text
-Claude Code  .claude/skills/data-kit/SKILL.md
-Codex        .agents/skills/data-kit/SKILL.md
+**Claude Code.** In your project folder:
+
+```sh
+mkdir -p .claude/skills/data-kit && curl -L -o .claude/skills/data-kit/SKILL.md https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md
 ```
 
-Invoke `/data-kit` in Claude Code or `$data-kit` in Codex, followed by your question. [Installation details](docs/INSTALL.md) cover personal install paths and the sources that need keys.
+**Codex.** In your project folder:
 
-Your session needs a tool that can fetch URLs or make HTTP requests, with network access allowed.
+```sh
+mkdir -p .agents/skills/data-kit && curl -L -o .agents/skills/data-kit/SKILL.md https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md
+```
+
+Use `~/.claude` or `~/.agents` instead to install for all your projects. Start a new session and ask your question; in Claude Code you can also type `/data-kit`, in Codex `$data-kit`. [Installation details](docs/INSTALL.md).
+
+Your session needs network access so the assistant can fetch the data.
 
 ## Sources and current checks
 
