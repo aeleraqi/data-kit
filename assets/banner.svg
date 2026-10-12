@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320" role="img" aria-labelledby="t">
+  <title id="t">حقيبة البيانات · Data Kit: 28 free institutional data sources, including satellite data</title>
+  <rect width="1280" height="320" fill="#1a1a1a"/>
+  <g fill="none" stroke="#3a3936" stroke-width="1">
+    <path d="M0 80H1280M0 160H1280M0 240H1280"/>
+    <path d="M160 0V320M320 0V320M480 0V320M640 0V320M800 0V320M960 0V320M1120 0V320"/>
+  </g>
+  <g fill="#fafaf8">
+    <circle cx="1060" cy="70" r="3"/><circle cx="1100" cy="96" r="2"/><circle cx="1142" cy="74" r="4"/><circle cx="1180" cy="120" r="2"/><circle cx="1210" cy="88" r="3"/><circle cx="1012" cy="112" r="2"/>
+  </g>
+  <rect x="64" y="64" width="12" height="192" fill="#c0392b"/>
+  <text x="104" y="150" fill="#fafaf8" font-family="'IBM Plex Sans Arabic','Noto Sans Arabic',Tahoma,sans-serif" font-size="76" font-weight="700"><tspan fill="#c0392b">.</tspan>حقيبة البيانات</text>
+  <text x="104" y="212" fill="#d9d6cc" font-family="'IBM Plex Sans','Helvetica Neue',Arial,sans-serif" font-size="30">Data Kit · 28 free institutional data sources, 11 from satellites</text>
+  <text x="104" y="252" fill="#9c9889" font-family="'IBM Plex Mono',Menlo,monospace" font-size="20">SKILL.md for Claude Code and Codex · InfoTimes · MIT</text>
+</svg>
