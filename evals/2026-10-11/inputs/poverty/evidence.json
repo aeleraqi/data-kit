@@ -1,0 +1,122 @@
+{
+ "retrievedAt": "2026-10-11",
+ "owid": {
+  "url": "https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty.csv?country=EGY~MAR&csvType=filtered&useColumnShortNames=true",
+  "note": "Rows for EGY and MAR from the filtered CSV download. No MAR row was returned.",
+  "rows": [
+   {
+    "entity": "Egypt",
+    "code": "EGY",
+    "year": 2025,
+    "headcount_ratio__ppp_version_2021__poverty_line_300__welfare_type_income_or_consumption__table_income_or_consumption_consolidated__survey_comparability_no_spells": 1.3737847097218037,
+    "population_historical": null,
+    "owid_region": null,
+    "headcount_ratio__ppp_version_2021__poverty_line_300__welfare_type_income_or_consumption__table_income_or_consumption_consolidated__survey_comparability_no_spells__original_year": 2021
+   }
+  ]
+ },
+ "pip": {
+  "url": "https://api.worldbank.org/pip/v1/pip?country=EGY&year=all&povline=3&ppp_version=2021&format=json",
+  "rows": [
+   {
+    "country_code": "EGY",
+    "reporting_year": 1990,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0714,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 1995,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0408,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 1999,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2004,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0412,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2008,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0373,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2010,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0154,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2012,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0125,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2015,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0121,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2017,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0311,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2019,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0199,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   },
+   {
+    "country_code": "EGY",
+    "reporting_year": 2021,
+    "welfare_type": "consumption",
+    "reporting_level": "national",
+    "headcount": 0.0137,
+    "survey_acronym": "HIECS",
+    "poverty_line": 3
+   }
+  ]
+ }
+}
