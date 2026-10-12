@@ -1,0 +1,15 @@
+{
+  "name": "data-kit",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "حقيبة البيانات — 28 free institutional data sources, including satellite data, for Claude Code and Codex, with repeatable examples.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs examples/*/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}
