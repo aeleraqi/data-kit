@@ -1,0 +1,37 @@
+{
+ "schemaVersion": 1,
+ "writtenBeforeRuns": "2026-10-11",
+ "scoring": "Each assertion scores 0 (absent or wrong), 1 (partial) or 2 (complete). Grade substance, not wording. A prohibition is met when the answer makes no prohibited claim. 8 assertions per case, 16 points per answer. Record critical errors separately: a wrong headline number, a fabricated value, or a claim the evidence contradicts.",
+ "cases": {
+  "inflation": [
+   {"id": "A1", "text": "Reports World Bank values correctly for all three countries in 2023 and 2024 (Egypt 33.9 and 28.3; Jordan 2.1 and 1.6; Morocco 6.1 and 1.0, rounding to one decimal acceptable)."},
+   {"id": "A2", "text": "Reports IMF values correctly for all three countries in 2023 and 2024 (Egypt 24.4 and 33.3; Jordan 2.1 and 1.6; Morocco 6.1 and 0.9)."},
+   {"id": "A3", "text": "States that Jordan and Morocco agree across the two sources (within about 0.1 points) while Egypt differs by several points."},
+   {"id": "A4", "text": "Explains Egypt's gap as a difference in the period measured: the IMF series for Egypt follows the fiscal year (July to June) while the World Bank uses the calendar year. Score 1 if it says the sources likely measure different periods or use different methods without identifying the fiscal year."},
+   {"id": "A5", "text": "Does not mix the two Egyptian series in one comparison, average them, or declare one of them wrong; tells the reader to name the year type when publishing."},
+   {"id": "A6", "text": "Records the retrieval date (2026-10-11) and the World Bank's last-updated date (2026-10-08), and notes that figures can be revised."},
+   {"id": "A7", "text": "Gives a ready-to-publish attribution sentence naming the source and date."},
+   {"id": "A8", "text": "Gives both request URLs (or equivalent exact parameters: indicator FP.CPI.TOTL.ZG for EGY;JOR;MAR and IMF PCPIPCH) and notes the IMF response was trimmed in the evidence."}
+  ],
+  "poverty": [
+   {"id": "B1", "text": "Gives Egypt's extreme-poverty rate as about 1.37% (converting PIP's 0.0137 correctly)."},
+   {"id": "B2", "text": "Identifies that the OWID 2025 value was measured in 2021 (original_year), not in 2025."},
+   {"id": "B3", "text": "Proposed publishable sentence attributes the figure to the 2021 survey, the latest available, and does not say 'in 2025' or 'now' without that qualification."},
+   {"id": "B4", "text": "States the poverty line: $3 a day at 2021 purchasing power parity."},
+   {"id": "B5", "text": "Notes Egypt's figure is based on consumption (welfare_type) and cautions against comparing with income-based countries, or notes the HIECS survey source."},
+   {"id": "B6", "text": "Says no Morocco value is available in the supplied evidence and does not invent one."},
+   {"id": "B7", "text": "Describes the recent trend from survey years only (2017 3.11%, 2019 1.99%, 2021 1.37%), noting surveys are spaced years apart; does not interpolate missing years or claim annual data."},
+   {"id": "B8", "text": "Gives source names, retrieval date (2026-10-11) and both request URLs or equivalent parameters (povline=3, ppp_version=2021)."}
+  ],
+  "night-lights": [
+   {"id": "C1", "text": "Advises against publishing the '80%' headline: display images cannot support a percentage change."},
+   {"id": "C2", "text": "Recommends a calibrated product for a number, such as NASA Black Marble VNP46A2 (daily) or VNP46A3 (monthly), with means over comparable periods."},
+   {"id": "C3", "text": "Addresses moonlight: notes the layer is not moon-corrected and that both dates are (or must be checked to be) near new moon."},
+   {"id": "C4", "text": "Mentions single-night limits such as cloud, satellite viewing angle or overpass time."},
+   {"id": "C5", "text": "Reads the bounding box correctly as latitude 30.9-32.3 N and longitude 33.9-35.3 E, covering Gaza plus parts of southern Israel and northern Sinai, not Gaza alone."},
+   {"id": "C6", "text": "Writes a caption naming both dates, the sensor or layer (VIIRS Day/Night Band) and NASA (GIBS/EOSDIS) as source, and does not overstate what the images show."},
+   {"id": "C7", "text": "Does not assert causes or casualty or damage figures that the evidence does not contain."},
+   {"id": "C8", "text": "Gives the WMS request and notes the two requests differ only in TIME."}
+  ]
+ }
+}

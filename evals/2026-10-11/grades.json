@@ -1,0 +1,1410 @@
+{
+ "method": "Three blinded graders (one per case), same model as the answerers, fixed rubric from oracle.json. Answers relabelled A-F at random per case; key saved separately and applied after grading.",
+ "cases": {
+  "inflation": {
+   "A": {
+    "scores": [
+     {
+      "id": "A1",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٣ | ٣٣٫٩ | ٢٤٫٤ | ٩٫٥- |",
+       "| المغرب | ٢٠٢٤ | ١٫٠ | ٠٫٩ | ٠٫١- |"
+      ],
+      "rationale": "All six World Bank values correct to one decimal."
+     },
+     {
+      "id": "A2",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٤ | ٢٨٫٣ | ٣٣٫٣ | ٥٫٠+ |",
+       "| الأردن | ٢٠٢٣ | ٢٫١ | ٢٫١ | لا فرق |"
+      ],
+      "rationale": "All six IMF values correct."
+     },
+     {
+      "id": "A3",
+      "score": 2,
+      "excerpts": [
+       "**المغرب ٢٠٢٤:** فرق ٠٫١ نقطة فقط.",
+       "**الأردن:** لا يوجد فرق."
+      ],
+      "rationale": "Jordan/Morocco agree within 0.1; Egypt's gap of several points is highlighted."
+     },
+     {
+      "id": "A4",
+      "score": 2,
+      "excerpts": [
+       "على أساس السنة المالية المصرية التي تمتد من يوليو إلى يونيو"
+      ],
+      "rationale": "Identifies IMF fiscal year (July-June) vs World Bank calendar year, with a verification caveat."
+     },
+     {
+      "id": "A5",
+      "score": 2,
+      "excerpts": [
+       "فاذكر صراحةً أنه لا يقيس السنة الميلادية (انظر الفقرة التالية)، ولا تضعه في جدول واحد مع أرقام البنك الدولي."
+      ],
+      "rationale": "No mixing or averaging, neither source called wrong, tells reader to state the year basis."
+     },
+     {
+      "id": "A6",
+      "score": 2,
+      "excerpts": [
+       "١١ أكتوبر ٢٠٢٦. وتاريخ آخر تحديث لبيانات البنك الدولي هو ٨ أكتوبر ٢٠٢٦",
+       "قد تُعدَّل الأرقام في تحديثات لاحقة"
+      ],
+      "rationale": "Retrieval date, last-updated date and revisability all stated."
+     },
+     {
+      "id": "A7",
+      "score": 2,
+      "excerpts": [
+       "المصدر: البنك الدولي، مؤشر «التضخم، أسعار المستهلك (٪ سنويًا)» (FP.CPI.TOTL.ZG)، بيانات محدَّثة في ٨ أكتوبر ٢٠٢٦، استُرجعت في ١١ أكتوبر ٢٠٢٦."
+      ],
+      "rationale": "Ready attribution naming source and both dates."
+     },
+     {
+      "id": "A8",
+      "score": 2,
+      "excerpts": [
+       "الاستجابة الكاملة تغطي ٢٢٨ اقتصادًا من ١٩٨٠ إلى ٢٠٣١. استخرج منها EGY وJOR وMAR فقط.",
+       "لقطة الصندوق المرفقة مقتطعة"
+      ],
+      "rationale": "Both URLs given; explicitly notes the IMF snapshot is trimmed."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 1,
+    "blindLabel": "A"
+   },
+   "B": {
+    "scores": [
+     {
+      "id": "A1",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٣ | ٣٣٫٩٪ | ٢٤٫٤٪ | رقم الصندوق للسنة المالية ٢٠٢٢/٢٠٢٣ |",
+       "| المغرب | ٢٠٢٤ | ١٫٠٪ | ٠٫٩٪ | فرق عُشر نقطة |"
+      ],
+      "rationale": "All World Bank values correct."
+     },
+     {
+      "id": "A2",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٤ | ٢٨٫٣٪ | ٣٣٫٣٪ | رقم الصندوق للسنة المالية ٢٠٢٣/٢٠٢٤ |",
+       "| الأردن | ٢٠٢٤ | ١٫٦٪ | ١٫٦٪ | متطابقان |"
+      ],
+      "rationale": "All IMF values correct."
+     },
+     {
+      "id": "A3",
+      "score": 2,
+      "excerpts": [
+       "**الأردن:** ٢٫١٪ ثم ١٫٦٪. المصدران متفقان، فلا خلاف هنا.",
+       "الفرق عُشر نقطة مئوية"
+      ],
+      "rationale": "Agreement for Jordan/Morocco and Egypt's large gap clearly stated."
+     },
+     {
+      "id": "A4",
+      "score": 2,
+      "excerpts": [
+       "يسجل صندوق النقد بيانات مصر بالسنة المالية التي تبدأ في يوليو وتنتهي في يونيو"
+      ],
+      "rationale": "Fiscal year vs calendar year explicitly identified."
+     },
+     {
+      "id": "A5",
+      "score": 2,
+      "excerpts": [
+       "أرقام الصندوق صحيحة لكنها لفترة أخرى، فلا تُخلط بها.",
+       "«في السنة المالية ٢٠٢٣/٢٠٢٤ بلغ التضخم ٣٣٫٣٪ بحسب صندوق النقد الدولي»"
+      ],
+      "rationale": "No mixing, IMF not called wrong, gives wording naming the fiscal year."
+     },
+     {
+      "id": "A6",
+      "score": 2,
+      "excerpts": [
+       "**الاسترجاع:** ١١ أكتوبر ٢٠٢٦.",
+       "البنك الدولي والصندوق يراجعان أرقامهما."
+      ],
+      "rationale": "Both dates and revisions noted."
+     },
+     {
+      "id": "A7",
+      "score": 2,
+      "excerpts": [
+       "بحسب بيانات البنك الدولي (مؤشر التضخم السنوي لأسعار المستهلك، آخر تحديث: ٨ أكتوبر ٢٠٢٦)"
+      ],
+      "rationale": "Publishable attribution with source and date."
+     },
+     {
+      "id": "A8",
+      "score": 2,
+      "excerpts": [
+       "هذا الطلب يعيد كل الدول من ١٩٨٠ إلى ٢٠٣١. صفِّ النتيجة بنفسك",
+       "والمقتطف لا يبيّن هل قيم ٢٠٢٤ نهائية أم تقديرات"
+      ],
+      "rationale": "Both URLs; notes full response vs the supplied excerpt."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 2,
+    "blindLabel": "B"
+   },
+   "C": {
+    "scores": [
+     {
+      "id": "A1",
+      "score": 2,
+      "excerpts": [
+       "| مصر | 2023 | 33.9 | 24.4 | 9.5 |",
+       "| المغرب | 2024 | 1.0 | 0.9 | 0.1 |"
+      ],
+      "rationale": "All World Bank values correct."
+     },
+     {
+      "id": "A2",
+      "score": 2,
+      "excerpts": [
+       "| مصر | 2024 | 28.3 | 33.3 | 5.0- |",
+       "| المغرب | 2023 | 6.1 | 6.1 | 0 |"
+      ],
+      "rationale": "All IMF values correct."
+     },
+     {
+      "id": "A3",
+      "score": 2,
+      "excerpts": [
+       "**الأردن:** المصدران متطابقان بعد التقريب (2.1% ثم 1.6%).",
+       "الفرق الوحيد في 2024 وقدره عُشر نقطة"
+      ],
+      "rationale": "Agreement and Egypt's gap stated."
+     },
+     {
+      "id": "A4",
+      "score": 2,
+      "excerpts": [
+       "يبدو أن رقم الصندوق لمصر محسوب على أساس السنة المالية المصرية (يوليو إلى يونيو)."
+      ],
+      "rationale": "Fiscal year explanation identified (hedged)."
+     },
+     {
+      "id": "A5",
+      "score": 1,
+      "excerpts": [
+       "ويجب ألا نخلط رقم الصندوق مع رقم البنك في جملة واحدة أو رسم واحد.",
+       "يجب التحقق منه في ملاحظات الدول في قاعدة بيانات آفاق الاقتصاد العالمي قبل ذكره في النص المنشور."
+      ],
+      "rationale": "Warns against mixing, but does not tell the reader to name the year type when publishing (defers it)."
+     },
+     {
+      "id": "A6",
+      "score": 2,
+      "excerpts": [
+       "**تاريخ الاسترجاع:** 11 أكتوبر 2026. آخر تحديث لبيانات البنك الدولي بحسب استجابته: 8 أكتوبر 2026.",
+       "قد يعيد الطلب نفسه أرقامًا مختلفة لاحقًا"
+      ],
+      "rationale": "Both dates and revisions noted."
+     },
+     {
+      "id": "A7",
+      "score": 2,
+      "excerpts": [
+       "المصدر: البنك الدولي، مؤشرات التنمية العالمية، مؤشر \"التضخم، أسعار المستهلك (% سنويًا)\" (FP.CPI.TOTL.ZG)، آخر تحديث 8 أكتوبر 2026"
+      ],
+      "rationale": "Attribution with source and dates."
+     },
+     {
+      "id": "A8",
+      "score": 1,
+      "excerpts": [
+       "يعيد هذا الطلب 228 اقتصادًا من 1980 إلى 2031. بعد ذلك نُبقي فقط على EGY وJOR وMAR"
+      ],
+      "rationale": "Both URLs given, but does not state that the supplied IMF snapshot was trimmed."
+     }
+    ],
+    "total": 14,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 2,
+    "blindLabel": "C"
+   },
+   "D": {
+    "scores": [
+     {
+      "id": "A1",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٣ | ٣٣٫٩ | ٢٤٫٤ | الرقم عند الصندوق يخص السنة المالية ٢٠٢٢/٢٠٢٣ |",
+       "| المغرب | ٢٠٢٤ | ١٫٠ | ٠٫٩ | فرق عُشر نقطة |"
+      ],
+      "rationale": "All World Bank values correct."
+     },
+     {
+      "id": "A2",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٤ | ٢٨٫٣ | ٣٣٫٣ | الرقم عند الصندوق يخص السنة المالية ٢٠٢٣/٢٠٢٤ |",
+       "| الأردن | ٢٠٢٣ | ٢٫١ | ٢٫١ | متطابقان |"
+      ],
+      "rationale": "All IMF values correct."
+     },
+     {
+      "id": "A3",
+      "score": 2,
+      "excerpts": [
+       "المصدران متطابقان، والفرق الوحيد في التقريب.",
+       "الفرق في ٢٠٢٤ عُشر نقطة مئوية فقط."
+      ],
+      "rationale": "Agreement and Egypt's gap stated."
+     },
+     {
+      "id": "A4",
+      "score": 2,
+      "excerpts": [
+       "والصندوق يحسب على السنة المالية المصرية التي تمتد من يوليو إلى يونيو"
+      ],
+      "rationale": "Fiscal year explanation identified."
+     },
+     {
+      "id": "A5",
+      "score": 2,
+      "excerpts": [
+       "لهذا لا يصح وضع الرقمين جنبًا إلى جنب كأنهما للفترة نفسها.",
+       "«٣٣٫٣٪ في السنة المالية ٢٠٢٣/٢٠٢٤ بحسب صندوق النقد الدولي»"
+      ],
+      "rationale": "No mixing, gives fiscal-year wording for publication."
+     },
+     {
+      "id": "A6",
+      "score": 2,
+      "excerpts": [
+       "استُرجعت البيانات في ١١ أكتوبر ٢٠٢٦، وتاريخ آخر تحديث في الرد هو ٨ أكتوبر ٢٠٢٦.",
+       "المصدران يراجعان أرقامهما."
+      ],
+      "rationale": "Both dates and revisions noted."
+     },
+     {
+      "id": "A7",
+      "score": 2,
+      "excerpts": [
+       "بحسب بيانات البنك الدولي (آخر تحديث: ٨ أكتوبر ٢٠٢٦)"
+      ],
+      "rationale": "Attribution with source and date."
+     },
+     {
+      "id": "A8",
+      "score": 1,
+      "excerpts": [
+       "هذا الطلب يعيد كل الدول (٢٢٨ اقتصادًا من ١٩٨٠ إلى ٢٠٣١). صفِّ النتيجة بنفسك"
+      ],
+      "rationale": "Both URLs given, but does not say the supplied IMF response was trimmed."
+     }
+    ],
+    "total": 15,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 3,
+    "blindLabel": "D"
+   },
+   "E": {
+    "scores": [
+     {
+      "id": "A1",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٣ | ٣٣٫٩ | ٢٤٫٤ | ٩٫٥ |",
+       "| المغرب | ٢٠٢٤ | ١٫٠ | ٠٫٩ | ٠٫١ |"
+      ],
+      "rationale": "All World Bank values correct."
+     },
+     {
+      "id": "A2",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٤ | ٢٨٫٣ | ٣٣٫٣ | -٥٫٠ |",
+       "| الأردن | ٢٠٢٤ | ١٫٦ | ١٫٦ | ٠ |"
+      ],
+      "rationale": "All IMF values correct."
+     },
+     {
+      "id": "A3",
+      "score": 2,
+      "excerpts": [
+       "**الأردن:** المصدران متطابقان بعد التقريب",
+       "فرق عُشر النقطة في ٢٠٢٤ (١٫٠ مقابل ٠٫٩) صغير."
+      ],
+      "rationale": "Agreement and Egypt's ~10 and 5 point gaps stated."
+     },
+     {
+      "id": "A4",
+      "score": 2,
+      "excerpts": [
+       "على أساس السنة المالية المصرية (يوليو إلى يونيو)"
+      ],
+      "rationale": "Fiscal year explanation identified (with verification caveat)."
+     },
+     {
+      "id": "A5",
+      "score": 2,
+      "excerpts": [
+       "وأذكر أنهما للسنة الميلادية.",
+       "ولا ينبغي خلط رقم الصندوق لمصر برقمي البنك الدولي للأردن والمغرب في الجدول نفسه."
+      ],
+      "rationale": "No mixing, tells reader to name the calendar-year basis."
+     },
+     {
+      "id": "A6",
+      "score": 2,
+      "excerpts": [
+       "١١ أكتوبر ٢٠٢٦. آخر تحديث لبيانات البنك الدولي بحسب الاستجابة: ٨ أكتوبر ٢٠٢٦.",
+       "وأرقام المصدرين قابلة للمراجعة في التحديثات اللاحقة."
+      ],
+      "rationale": "Both dates and revisions noted."
+     },
+     {
+      "id": "A7",
+      "score": 2,
+      "excerpts": [
+       "آخر تحديث ٨ أكتوبر ٢٠٢٦، تاريخ الاسترجاع ١١ أكتوبر ٢٠٢٦."
+      ],
+      "rationale": "Attribution with source and dates."
+     },
+     {
+      "id": "A8",
+      "score": 2,
+      "excerpts": [
+       "لقطة الصندوق مقتطعة (من ٢٠١٨ ولهذه الدول الثلاث فقط)."
+      ],
+      "rationale": "Both URLs and explicit note that the snapshot is trimmed."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 3,
+    "blindLabel": "E"
+   },
+   "F": {
+    "scores": [
+     {
+      "id": "A1",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٣ | ٣٣٫٩ | ٢٤٫٤ (السنة المالية ٢٠٢٢/٢٠٢٣) | **٣٣٫٩** (البنك الدولي) |",
+       "| المغرب | ٢٠٢٤ | ١٫٠ (٠٫٩٩) | ٠٫٩ | **١٫٠** (البنك الدولي) |"
+      ],
+      "rationale": "All World Bank values correct."
+     },
+     {
+      "id": "A2",
+      "score": 2,
+      "excerpts": [
+       "| مصر | ٢٠٢٤ | ٢٨٫٣ | ٣٣٫٣ (السنة المالية ٢٠٢٣/٢٠٢٤) | **٢٨٫٣** (البنك الدولي) |",
+       "| الأردن | ٢٠٢٣ | ٢٫١ | ٢٫١ | **٢٫١** |"
+      ],
+      "rationale": "All IMF values correct."
+     },
+     {
+      "id": "A3",
+      "score": 2,
+      "excerpts": [
+       "**الأردن: الرقم واحد في المصدرين**",
+       "الفرق عُشر نقطة مئوية"
+      ],
+      "rationale": "Agreement and Egypt's large gap stated."
+     },
+     {
+      "id": "A4",
+      "score": 2,
+      "excerpts": [
+       "الصندوق يعرض بيانات مصر بالسنة المالية التي تبدأ في يوليو وتنتهي في يونيو."
+      ],
+      "rationale": "Fiscal year explanation identified."
+     },
+     {
+      "id": "A5",
+      "score": 2,
+      "excerpts": [
+       "هذا لا يعني أن أحدهما مخطئ",
+       "الصياغة الصحيحة: «في السنة المالية ٢٠٢٣/٢٠٢٤»."
+      ],
+      "rationale": "Neither called wrong, no mixing, prescribes naming the fiscal year."
+     },
+     {
+      "id": "A6",
+      "score": 2,
+      "excerpts": [
+       "آخر تحديث لبيانات البنك الدولي بحسب الحقل `lastupdated`: ٨ أكتوبر ٢٠٢٦.",
+       "المصدران يراجعان أرقامهما، وقد تتغير القيم في إصدارات لاحقة."
+      ],
+      "rationale": "Both dates and revisions noted."
+     },
+     {
+      "id": "A7",
+      "score": 2,
+      "excerpts": [
+       "بحسب بيانات البنك الدولي (مؤشر تضخم أسعار المستهلك، آخر تحديث: ٨ أكتوبر ٢٠٢٦)"
+      ],
+      "rationale": "Attribution with source and date."
+     },
+     {
+      "id": "A8",
+      "score": 2,
+      "excerpts": [
+       "اختصرنا أيضًا الرد الأصلي وأبقينا على ثلاث دول فقط."
+      ],
+      "rationale": "Both URLs and notes the IMF response was trimmed."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [
+     "Lead claims Egypt's rate was more than ten times the other two countries' in both years (\"وبقي في الحالتين أعلى من عشرة أضعاف المعدل في البلدين الآخرين\"); evidence contradicts this for 2023, when Egypt 33.9% vs Morocco 6.1% is about 5.6 times."
+    ],
+    "arm": "with-skill",
+    "repeat": 1,
+    "blindLabel": "F"
+   }
+  },
+  "poverty": {
+   "A": {
+    "scores": [
+     {
+      "id": "B1",
+      "score": 2,
+      "excerpts": [
+       "**مصر:** ١٫٣٧٪، وسنته الحقيقية هي سنة المسح ٢٠٢١.",
+       "`headcount = 0.0137`"
+      ],
+      "rationale": "Correct 1.37% from PIP 0.0137."
+     },
+     {
+      "id": "B2",
+      "score": 2,
+      "excerpts": [
+       "لكن العمود `original_year` قيمته ٢٠٢١، أي أن قيمة ٢٠٢٥ هي رقم مسح ٢٠٢١ نفسه منقولًا إلى سنة أحدث"
+      ],
+      "rationale": "Explicitly identifies OWID 2025 value as 2021 original_year."
+     },
+     {
+      "id": "B3",
+      "score": 2,
+      "excerpts": [
+       "هذا الرقم مأخوذ من آخر مسح متاح، وهو بحث الدخل والإنفاق والاستهلاك لعام ٢٠٢١",
+       "لا أنصح بكتابة «الآن» ولا «في ٢٠٢٥»"
+      ],
+      "rationale": "Sentence uses past tense and attributes to the latest (2021) survey."
+     },
+     {
+      "id": "B4",
+      "score": 2,
+      "excerpts": [
+       "بأقل من ٣ دولارات للفرد يوميًا بأسعار تعادل القوة الشرائية لعام ٢٠٢١"
+      ],
+      "rationale": "States $3/day at 2021 PPP."
+     },
+     {
+      "id": "B5",
+      "score": 2,
+      "excerpts": [
+       "المقياس يعتمد على **الاستهلاك** لا الدخل (`welfare_type = consumption`)",
+       "بحث الدخل والإنفاق والاستهلاك (HIECS)"
+      ],
+      "rationale": "Notes consumption basis, HIECS source, and checking welfare_type before comparing."
+     },
+     {
+      "id": "B6",
+      "score": 2,
+      "excerpts": [
+       "لا أستطيع إعطاء رقم للمغرب من البيانات المرفقة، ولن أقدّره من عندي."
+      ],
+      "rationale": "No Morocco value, none invented."
+     },
+     {
+      "id": "B7",
+      "score": 2,
+      "excerpts": [
+       "| 2017 | ٣٫١١٪ |",
+       "يُفضَّل تقديم الاتجاه على أنه مقارنة بين مسوح متتالية، لا سلسلة متصلة مؤكدة"
+      ],
+      "rationale": "Trend from survey years only with explicit non-continuous framing; no interpolation."
+     },
+     {
+      "id": "B8",
+      "score": 2,
+      "excerpts": [
+       "تاريخ الاسترجاع: ١١ أكتوبر ٢٠٢٦.",
+       "https://api.worldbank.org/pip/v1/pip?country=EGY&year=all&povline=3&ppp_version=2021&format=json"
+      ],
+      "rationale": "Both sources, retrieval date, both URLs."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 1,
+    "blindLabel": "A"
+   },
+   "B": {
+    "scores": [
+     {
+      "id": "B1",
+      "score": 2,
+      "excerpts": [
+       "**مصر:** ١٫٣٧٪ في سنة المسح ٢٠٢١. القيمة في PIP هي `headcount = 0.0137`"
+      ],
+      "rationale": "Correct conversion."
+     },
+     {
+      "id": "B2",
+      "score": 2,
+      "excerpts": [
+       "يعرض Our World in Data قيمة مصر تحت سنة ٢٠٢٥، لكن العمود `original_year` يساوي ٢٠٢١"
+      ],
+      "rationale": "Identifies 2021 original_year."
+     },
+     {
+      "id": "B3",
+      "score": 2,
+      "excerpts": [
+       "وفق آخر مسح متاح للدخل والإنفاق والاستهلاك أُجري عام ٢٠٢١"
+      ],
+      "rationale": "Sentence attributes to latest 2021 survey, past tense."
+     },
+     {
+      "id": "B4",
+      "score": 2,
+      "excerpts": [
+       "بأقل من ٣ دولارات يوميًا للفرد بأسعار ٢٠٢١ المعدّلة بتعادل القوة الشرائية"
+      ],
+      "rationale": "States line and PPP year."
+     },
+     {
+      "id": "B5",
+      "score": 2,
+      "excerpts": [
+       "في مصر يُبنى الرقم على **الاستهلاك** لا الدخل (`welfare_type = consumption`)، ومصدره مسح الدخل والإنفاق والاستهلاك (HIECS)"
+      ],
+      "rationale": "Consumption basis and HIECS source noted."
+     },
+     {
+      "id": "B6",
+      "score": 2,
+      "excerpts": [
+       "**المغرب:** لا يوجد رقم.",
+       "ولا يصح تقديره"
+      ],
+      "rationale": "No Morocco value invented."
+     },
+     {
+      "id": "B7",
+      "score": 1,
+      "excerpts": [
+       "| ٢٠١٧ | ٣٫١١٪ |",
+       "النسبة تراجعت بين ٢٠١٧ و٢٠٢١"
+      ],
+      "rationale": "Uses survey years only and correct values, but does not explicitly note surveys are spaced years apart."
+     },
+     {
+      "id": "B8",
+      "score": 2,
+      "excerpts": [
+       "تاريخ الاسترجاع: ١١ أكتوبر ٢٠٢٦.",
+       "https://api.worldbank.org/pip/v1/pip?country=EGY&year=all&povline=3&ppp_version=2021&format=json"
+      ],
+      "rationale": "Sources, date and both URLs."
+     }
+    ],
+    "total": 15,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 2,
+    "blindLabel": "B"
+   },
+   "C": {
+    "scores": [
+     {
+      "id": "B1",
+      "score": 2,
+      "excerpts": [
+       "يعرض Our World in Data الرقم 1.37% تحت عام 2025",
+       "(0.0137)"
+      ],
+      "rationale": "Correct 1.37%."
+     },
+     {
+      "id": "B2",
+      "score": 2,
+      "excerpts": [
+       "لكن الملف نفسه يشير إلى أن السنة الأصلية للقياس هي 2021"
+      ],
+      "rationale": "Identifies original year 2021."
+     },
+     {
+      "id": "B3",
+      "score": 2,
+      "excerpts": [
+       "وفق آخر مسح للأسر متاح لدى البنك الدولي، وهو مسح الدخل والإنفاق والاستهلاك لعام 2021"
+      ],
+      "rationale": "Past tense, attributed to latest 2021 survey."
+     },
+     {
+      "id": "B4",
+      "score": 2,
+      "excerpts": [
+       "على أقل من 3 دولارات للفرد يوميًا بأسعار 2021 المعدّلة بتعادل القوة الشرائية"
+      ],
+      "rationale": "States line and PPP year."
+     },
+     {
+      "id": "B5",
+      "score": 2,
+      "excerpts": [
+       "نسبة السكان الذين يقل استهلاكهم الفردي، لا دخلهم",
+       "المصدر مسح الأسر (HIECS)"
+      ],
+      "rationale": "Consumption basis and HIECS noted."
+     },
+     {
+      "id": "B6",
+      "score": 2,
+      "excerpts": [
+       "لا يمكنني إذن إعطاء رقم للمغرب من هذه البيانات"
+      ],
+      "rationale": "No Morocco value invented."
+     },
+     {
+      "id": "B7",
+      "score": 1,
+      "excerpts": [
+       "النسبة انخفضت بين المسحين الأخيرين، من 1.99% في 2019 إلى 1.37% في 2021",
+       "2017: ‏3.11%"
+      ],
+      "rationale": "Correct survey-year values, but no explicit note on spacing between surveys."
+     },
+     {
+      "id": "B8",
+      "score": 2,
+      "excerpts": [
+       "تاريخ الاسترجاع: 11 أكتوبر 2026.",
+       "`https://api.worldbank.org/pip/v1/pip?country=EGY&year=all&povline=3&ppp_version=2021&format=json`"
+      ],
+      "rationale": "Sources, date, both URLs."
+     }
+    ],
+    "total": 15,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 2,
+    "blindLabel": "C"
+   },
+   "D": {
+    "scores": [
+     {
+      "id": "B1",
+      "score": 2,
+      "excerpts": [
+       "**مصر: 1.37% في 2021.** الرقم من منصة البنك الدولي (headcount = 0.0137)"
+      ],
+      "rationale": "Correct conversion."
+     },
+     {
+      "id": "B2",
+      "score": 2,
+      "excerpts": [
+       "تعرض Our World in Data القيمة 1.3738% تحت سنة 2025، لكن عمود السنة الأصلية فيها يقول 2021"
+      ],
+      "rationale": "Identifies original year 2021."
+     },
+     {
+      "id": "B3",
+      "score": 2,
+      "excerpts": [
+       "هذا الرقم مأخوذ من آخر مسح لدخل الأسر وإنفاقها واستهلاكها (HIECS) أُجري عام 2021"
+      ],
+      "rationale": "Present-tense opening ('يعيش') but explicitly qualified as from the latest 2021 survey; meets rubric."
+     },
+     {
+      "id": "B4",
+      "score": 2,
+      "excerpts": [
+       "بأقل من 3 دولارات للفرد يوميًا بأسعار تعادل القوة الشرائية لعام 2021"
+      ],
+      "rationale": "States line and PPP year."
+     },
+     {
+      "id": "B5",
+      "score": 2,
+      "excerpts": [
+       "المقياس قائم على **الاستهلاك** وليس الدخل",
+       "(مسح HIECS، على أساس الاستهلاك)"
+      ],
+      "rationale": "Consumption basis and HIECS noted."
+     },
+     {
+      "id": "B6",
+      "score": 2,
+      "excerpts": [
+       "**المغرب: لا يوجد رقم.**"
+      ],
+      "rationale": "No Morocco value invented."
+     },
+     {
+      "id": "B7",
+      "score": 1,
+      "excerpts": [
+       "نعم، في آخر قراءتين: من 1.99% (2019) إلى 1.37% (2021)",
+       "| النسبة % | 7.14 | 4.08 | 0.00 |"
+      ],
+      "rationale": "Survey-year values correct, no interpolation, but spacing of surveys not explicitly noted."
+     },
+     {
+      "id": "B8",
+      "score": 2,
+      "excerpts": [
+       "تاريخ الاسترجاع: 11 أكتوبر 2026.",
+       "`https://ourworldindata.org/grapher/share-of-population-in-extreme-poverty.csv?country=EGY~MAR&csvType=filtered&useColumnShortNames=true`"
+      ],
+      "rationale": "Sources, date, both URLs."
+     }
+    ],
+    "total": 15,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 3,
+    "blindLabel": "D"
+   },
+   "E": {
+    "scores": [
+     {
+      "id": "B1",
+      "score": 2,
+      "excerpts": [
+       "كان نحو ١٫٣٧٪ من سكان مصر يعيشون في فقر مدقع"
+      ],
+      "rationale": "Correct 1.37%."
+     },
+     {
+      "id": "B2",
+      "score": 2,
+      "excerpts": [
+       "Our World in Data تعرض قيمة مصر تحت سنة ٢٠٢٥، لكن العمود `original_year` يساوي ٢٠٢١"
+      ],
+      "rationale": "Identifies original year 2021."
+     },
+     {
+      "id": "B3",
+      "score": 2,
+      "excerpts": [
+       "وذلك وفق آخر مسح متاح للدخل والإنفاق والاستهلاك أُجري عام ٢٠٢١"
+      ],
+      "rationale": "Past tense, attributed to latest 2021 survey."
+     },
+     {
+      "id": "B4",
+      "score": 2,
+      "excerpts": [
+       "على أقل من ٣ دولارات للفرد يوميًا بتعادل القوة الشرائية لعام ٢٠٢١"
+      ],
+      "rationale": "States line and PPP year."
+     },
+     {
+      "id": "B5",
+      "score": 2,
+      "excerpts": [
+       "الرقم يقيس الاستهلاك لا الدخل (`welfare_type = consumption`). لذلك لا يُقارن مباشرة بدول تقيس الفقر بالدخل."
+      ],
+      "rationale": "Consumption basis with explicit caution vs income-based countries; HIECS also named."
+     },
+     {
+      "id": "B6",
+      "score": 2,
+      "excerpts": [
+       "لا أستطيع إعطاء رقم للمغرب من هذه البيانات، ولن أقدّره."
+      ],
+      "rationale": "No Morocco value invented."
+     },
+     {
+      "id": "B7",
+      "score": 2,
+      "excerpts": [
+       "| ٢٠١٧ | ٣٫١١٪ |",
+       "**المسوح متباعدة** (كل سنتين إلى خمس سنوات)"
+      ],
+      "rationale": "Exactly the three survey years with explicit note on spacing."
+     },
+     {
+      "id": "B8",
+      "score": 2,
+      "excerpts": [
+       "تاريخ الاسترجاع: ١١ أكتوبر ٢٠٢٦.",
+       "https://api.worldbank.org/pip/v1/pip?country=EGY&year=all&povline=3&ppp_version=2021&format=json"
+      ],
+      "rationale": "Sources, date, both URLs."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 3,
+    "blindLabel": "E"
+   },
+   "F": {
+    "scores": [
+     {
+      "id": "B1",
+      "score": 2,
+      "excerpts": [
+       "**مصر: 1.37%.**"
+      ],
+      "rationale": "Correct 1.37%."
+     },
+     {
+      "id": "B2",
+      "score": 2,
+      "excerpts": [
+       "معنى ذلك أنها ليست قياسًا جديدًا لعام 2025، بل رقم 2021 مُرحَّل إلى 2025"
+      ],
+      "rationale": "Identifies 2021 original year."
+     },
+     {
+      "id": "B3",
+      "score": 2,
+      "excerpts": [
+       "هذا الرقم مأخوذ من مسح الدخل والإنفاق والاستهلاك لعام 2021 (HIECS)، وهو أحدث مسح متاح"
+      ],
+      "rationale": "Past tense, attributed to latest 2021 survey."
+     },
+     {
+      "id": "B4",
+      "score": 2,
+      "excerpts": [
+       "على أقل من 3 دولارات للفرد يوميًا بأسعار تعادل القوة الشرائية لعام 2021"
+      ],
+      "rationale": "States line and PPP year."
+     },
+     {
+      "id": "B5",
+      "score": 2,
+      "excerpts": [
+       "ويعتمد على الاستهلاك وليس الدخل، ومصدره مسح HIECS"
+      ],
+      "rationale": "Consumption basis and HIECS noted."
+     },
+     {
+      "id": "B6",
+      "score": 2,
+      "excerpts": [
+       "**المغرب: لا يوجد رقم.**"
+      ],
+      "rationale": "No Morocco value invented."
+     },
+     {
+      "id": "B7",
+      "score": 1,
+      "excerpts": [
+       "- 2017: 3.11% (قفزة واضحة)",
+       "النسبة انخفضت بعد ذروة 2017"
+      ],
+      "rationale": "Correct survey-year values, no interpolation, but no explicit note that surveys are years apart."
+     },
+     {
+      "id": "B8",
+      "score": 2,
+      "excerpts": [
+       "تاريخ الاسترجاع: 11 أكتوبر 2026.",
+       "`https://api.worldbank.org/pip/v1/pip?country=EGY&year=all&povline=3&ppp_version=2021&format=json`"
+      ],
+      "rationale": "Sources, date, both URLs."
+     }
+    ],
+    "total": 15,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 1,
+    "blindLabel": "F"
+   }
+  },
+  "night-lights": {
+   "A": {
+    "scores": [
+     {
+      "id": "C1",
+      "score": 2,
+      "excerpts": [
+       "### الخلاصة: لا ينشر العنوان بصيغته الحالية",
+       "درجة سطوع البكسل فيهما تأتي من تدرّج لوني مخصص للعرض، ولا تمثل قيمة إشعاع خطية."
+      ],
+      "rationale": "Rejects the 80% headline and explains display images cannot yield a percentage."
+     },
+     {
+      "id": "C2",
+      "score": 2,
+      "excerpts": [
+       "نستخدم منتج Black Marble من ناسا (VNP46A2 اليومي أو VNP46A3 الشهري)",
+       "متوسط عدة ليالٍ صافية قبل الحرب (مثلًا من مطلع سبتمبر حتى ٦ أكتوبر ٢٠٢٣) مقابل فترة مماثلة بعد بدئها"
+      ],
+      "rationale": "Names VNP46A2/A3 and means over comparable periods."
+     },
+     {
+      "id": "C3",
+      "score": 2,
+      "excerpts": [
+       "فلا تصحيح فيها للسحب أو ضوء القمر أو الغلاف الجوي",
+       "التاريخان يوافقان تقريبًا محاق القمر، وهذا يقلّل أثر ضوئه، لكنه يحتاج إلى تحقق"
+      ],
+      "rationale": "States layer not moon-corrected and that dates are near new moon, to be verified."
+     },
+     {
+      "id": "C4",
+      "score": 2,
+      "excerpts": [
+       "ليلة واحدة لكل تاريخ، بإشعاع خام.",
+       "يمر القمر Suomi NPP نحو الواحدة والنصف بعد منتصف الليل بالتوقيت المحلي"
+      ],
+      "rationale": "Covers single-night cloud effects and overpass time."
+     },
+     {
+      "id": "C5",
+      "score": 2,
+      "excerpts": [
+       "حدود الإطار: من خط عرض ٣٠٫٩ إلى ٣٢٫٣ شمالًا، ومن خط طول ٣٣٫٩ إلى ٣٥٫٣ شرقًا",
+       "**طرف من شمال شرق سيناء المصري** في الركن السفلي الأيسر"
+      ],
+      "rationale": "Correct bbox; covers Gaza, Israel, West Bank edge and northern Sinai, not Gaza alone."
+     },
+     {
+      "id": "C6",
+      "score": 2,
+      "excerpts": [
+       "إلى اليمين ليلة ١٥ سبتمبر ٢٠٢٣ قبل الحرب، وإلى اليسار ليلة ١٣ نوفمبر ٢٠٢٣",
+       "المصدر: NASA Worldview/GIBS، مستشعر VIIRS (نطاق Day/Night Band) على القمر الصناعي Suomi NPP."
+      ],
+      "rationale": "Caption has both dates, VIIRS DNB, NASA GIBS, and says images illustrate rather than measure."
+     },
+     {
+      "id": "C7",
+      "score": 2,
+      "excerpts": [
+       "العتمة لا تثبت سببها وحدها.",
+       "والصورتان لا تميّزان بين هذه الأسباب."
+      ],
+      "rationale": "Lists possible causes without asserting any; no casualty/damage figures."
+     },
+     {
+      "id": "C8",
+      "score": 2,
+      "excerpts": [
+       "`https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=VIIRS_SNPP_DayNightBand_At_Sensor_Radiance&STYLES=&CRS=EPSG:4326&BBOX=30.9,33.9,32.3,35.3&WIDTH=560&HEIGHT=560&FORMAT=image/png&TIME=2023-09-15`",
+       "خلال الحرب: الطلب نفسه مع `TIME=2023-11-13`."
+      ],
+      "rationale": "Full WMS request; second is the same request with only TIME changed."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 2,
+    "blindLabel": "A"
+   },
+   "B": {
+    "scores": [
+     {
+      "id": "C1",
+      "score": 2,
+      "excerpts": [
+       "## الحكم: لا يُنشر العنوان كما هو",
+       "لا يصح أن تُحسب منهما أي نسبة."
+      ],
+      "rationale": "Rejects headline; display JPEGs cannot support a percentage."
+     },
+     {
+      "id": "C2",
+      "score": 2,
+      "excerpts": [
+       "استخدم منتج NASA Black Marble `VNP46A2`، وهو يومي ومصحّح من ضوء القمر والسحب، أو `VNP46A3` الشهري.",
+       "وقارن متوسط عدة ليالٍ، لا ليلتين فقط"
+      ],
+      "rationale": "Calibrated product plus multi-night means over comparable periods."
+     },
+     {
+      "id": "C3",
+      "score": 2,
+      "excerpts": [
+       "لم يُصحَّح فيها أثر ضوء القمر ولا السحب ولا الغلاف الجوي ولا زاوية الرصد.",
+       "التاريخان اختيرا بشكل صحيح لأنهما ليلتا محاق"
+      ],
+      "rationale": "Not moon-corrected; both dates near new moon."
+     },
+     {
+      "id": "C4",
+      "score": 2,
+      "excerpts": [
+       "القمر Suomi NPP يمر قرابة الواحدة والنصف بعد منتصف الليل بالتوقيت المحلي.",
+       "ولا زاوية الرصد"
+      ],
+      "rationale": "Mentions overpass time, viewing angle and clouds."
+     },
+     {
+      "id": "C5",
+      "score": 2,
+      "excerpts": [
+       "خط العرض من ٣٠٫٩ إلى ٣٢٫٣ شمالًا، وخط الطول من ٣٣٫٩ إلى ٣٥٫٣ شرقًا",
+       "**سيناء:** أطراف شمال شرقها، ومنها رفح المصرية."
+      ],
+      "rationale": "Correct bbox and coverage beyond Gaza."
+     },
+     {
+      "id": "C6",
+      "score": 2,
+      "excerpts": [
+       "كما رصدها مستشعر VIIRS على القمر الصناعي Suomi NPP، ليلة ١٥ سبتمبر ٢٠٢٣ (قبل الحرب) وليلة ١٣ نوفمبر ٢٠٢٣",
+       "الصورتان للعرض وليستا قياسًا لشدة الإضاءة. المصدر: NASA GIBS / Worldview."
+      ],
+      "rationale": "Both dates, VIIRS sensor (DNB in attribution line), NASA GIBS; no overstatement."
+     },
+     {
+      "id": "C7",
+      "score": 2,
+      "excerpts": [
+       "**لا تفسير السبب:** الظلام قد يعكس انقطاع الكهرباء والوقود، أو الدمار، أو النزوح، أو إطفاء الأضواء عمدًا."
+      ],
+      "rationale": "No asserted cause or casualty/damage figures."
+     },
+     {
+      "id": "C8",
+      "score": 2,
+      "excerpts": [
+       "لا يتغير في الطلب إلا `TIME`:"
+      ],
+      "rationale": "Gives request and states only TIME differs."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 1,
+    "blindLabel": "B"
+   },
+   "C": {
+    "scores": [
+     {
+      "id": "C1",
+      "score": 2,
+      "excerpts": [
+       "## الحكم: لا تنشروا العنوان بصيغته الحالية",
+       "أي نسبة تُحسب من لمعان بكسلاتهما هي نسبة في ملف JPEG، لا في أضواء غزة."
+      ],
+      "rationale": "Rejects headline; display images cannot give a percentage."
+     },
+     {
+      "id": "C2",
+      "score": 2,
+      "excerpts": [
+       "`VNP46A2` منتج يومي مصحَّح من ضوء القمر والسحب.",
+       "متوسط عدة ليالٍ صالحة قبل ٧ أكتوبر ٢٠٢٣، يقابله متوسط ليالٍ صالحة في نوفمبر"
+      ],
+      "rationale": "Black Marble with period means."
+     },
+     {
+      "id": "C3",
+      "score": 2,
+      "excerpts": [
+       "لم تُصحَّح من السحب أو الغلاف الجوي أو ضوء القمر.",
+       "التقطت الصورتان في ليلتي محاق تقريبًا"
+      ],
+      "rationale": "Not moon-corrected; near new moon."
+     },
+     {
+      "id": "C4",
+      "score": 2,
+      "excerpts": [
+       "سحابة عابرة في إحدى الليلتين قد تغيّر الصورة."
+      ],
+      "rationale": "Single-night cloud limitation."
+     },
+     {
+      "id": "C5",
+      "score": 2,
+      "excerpts": [
+       "من خط العرض ٣٠٫٩ إلى ٣٢٫٣ شمالًا، ومن خط الطول ٣٣٫٩ إلى ٣٥٫٣ شرقًا",
+       "شمال شرق سيناء، في الركن الجنوبي الغربي."
+      ],
+      "rationale": "Correct bbox; Gaza <2% of frame, includes Israel and Sinai."
+     },
+     {
+      "id": "C6",
+      "score": 2,
+      "excerpts": [
+       "كما رصدها مستشعر VIIRS على القمر الصناعي Suomi NPP في ليلتي ١٥ سبتمبر ٢٠٢٣ (يمين) و١٣ نوفمبر ٢٠٢٣ (يسار)",
+       "المصدر: NASA GIBS / Worldview — طبقة VIIRS_SNPP_DayNightBand_At_Sensor_Radiance."
+      ],
+      "rationale": "Dates, layer, NASA source; says not suitable to measure a decline."
+     },
+     {
+      "id": "C7",
+      "score": 2,
+      "excerpts": [
+       "الصورتان لا تفصلان بين هذه الأسباب، ولا تصلحان وحدهما مقياسًا مباشرًا للدمار."
+      ],
+      "rationale": "No asserted cause or figures."
+     },
+     {
+      "id": "C8",
+      "score": 1,
+      "excerpts": [
+       "**صورة ١٣ نوفمبر ٢٠٢٣ (بعد):**"
+      ],
+      "rationale": "Gives both full URLs but never states they differ only in TIME."
+     }
+    ],
+    "total": 15,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 2,
+    "blindLabel": "C"
+   },
+   "D": {
+    "scores": [
+     {
+      "id": "C1",
+      "score": 2,
+      "excerpts": [
+       "## الحكم: لا تنشروا العنوان بصيغته الحالية",
+       "درجة السطوع فيهما ناتجة عن طريقة العرض والضغط، وليست قيمة إشعاع يمكن حسابها."
+      ],
+      "rationale": "Rejects headline on display-image grounds."
+     },
+     {
+      "id": "C2",
+      "score": 2,
+      "excerpts": [
+       "اليومي VNP46A2، وهو مصحح من أثر القمر والغلاف الجوي ومزود بقناع للغيوم.",
+       "الوسيط لكل الليالي الصافية بين 1 سبتمبر و6 أكتوبر 2023، مقابل الوسيط لفترة مماثلة خلال الحرب"
+      ],
+      "rationale": "Black Marble with aggregated comparable periods (median)."
+     },
+     {
+      "id": "C3",
+      "score": 2,
+      "excerpts": [
+       "دون تصحيح للغيوم أو ضوء القمر أو الغلاف الجوي أو التشتت الضوئي",
+       "التاريخين يوافقان تقريبًا ليلتي محاق (قمر جديد)"
+      ],
+      "rationale": "Not moon-corrected; near new moon, flagged for checking."
+     },
+     {
+      "id": "C4",
+      "score": 2,
+      "excerpts": [
+       "الصورتان لقطتان من ليلتين منفردتين، ومن مرور واحد للقمر الصناعي بعد منتصف الليل تقريبًا."
+      ],
+      "rationale": "Single-night, overpass-time limits."
+     },
+     {
+      "id": "C5",
+      "score": 2,
+      "excerpts": [
+       "من خط عرض 30.9 إلى 32.3 شمالًا، ومن خط طول 33.9 إلى 35.3 شرقًا",
+       "طرف من شمال سيناء يشمل رفح المصرية."
+      ],
+      "rationale": "Correct bbox; broader coverage."
+     },
+     {
+      "id": "C6",
+      "score": 2,
+      "excerpts": [
+       "صورتان ليليتان التقطهما مستشعر VIIRS (نطاق اليوم/الليل) على القمر الصناعي Suomi NPP: الأولى بتاريخ 15 سبتمبر 2023",
+       "المصدر: NASA GIBS / Worldview — طبقة VIIRS_SNPP_DayNightBand_At_Sensor_Radiance."
+      ],
+      "rationale": "Dates, DNB, NASA GIBS; says visual comparison not measurement."
+     },
+     {
+      "id": "C7",
+      "score": 2,
+      "excerpts": [
+       "الصورتان وحدهما لا تفصلان بين هذه الأسباب."
+      ],
+      "rationale": "No asserted cause or figures."
+     },
+     {
+      "id": "C8",
+      "score": 2,
+      "excerpts": [
+       "للصورة الثانية يُستخدم الطلب نفسه مع تغيير `TIME=2023-11-13`."
+      ],
+      "rationale": "Request given; only TIME changes."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 3,
+    "blindLabel": "D"
+   },
+   "E": {
+    "scores": [
+     {
+      "id": "C1",
+      "score": 2,
+      "excerpts": [
+       "لا يصلح العنوان للنشر بصيغته الحالية",
+       "سطوع البكسل فيهما سطوع عرض، وليس قياسًا للإشعاع."
+      ],
+      "rationale": "Rejects headline; display brightness is not a measurement."
+     },
+     {
+      "id": "C2",
+      "score": 2,
+      "excerpts": [
+       "المطلوب منتج Black Marble من ناسا: اليومي VNP46A2 أو الشهري VNP46A3",
+       "خط الأساس متوسط عدة ليالٍ صافية قبل ٧ أكتوبر"
+      ],
+      "rationale": "Calibrated product and period means."
+     },
+     {
+      "id": "C3",
+      "score": 2,
+      "excerpts": [
+       "غير مصححة لضوء القمر ولا للغلاف الجوي، وليس فيها قناع للسحب.",
+       "يوافق التاريخان تقريبًا ليلتَي محاق، وهذا يقلل أثر ضوء القمر، لكن ينبغي التحقق من ذلك قبل النشر."
+      ],
+      "rationale": "Both parts present."
+     },
+     {
+      "id": "C4",
+      "score": 2,
+      "excerpts": [
+       "يمكن أن تؤثر فيها السحب أو زاوية الرصد أو التشويش"
+      ],
+      "rationale": "Cloud and viewing angle."
+     },
+     {
+      "id": "C5",
+      "score": 2,
+      "excerpts": [
+       "الإطار مربع بين خطَّي العرض **30.9° و32.3° شمالًا** وخطَّي الطول **33.9° و35.3° شرقًا**",
+       "**الطرف الشمالي الشرقي من سيناء** جنوب غرب القطاع"
+      ],
+      "rationale": "Correct bbox; not Gaza alone."
+     },
+     {
+      "id": "C6",
+      "score": 2,
+      "excerpts": [
+       "ليلة ١٥ سبتمبر ٢٠٢٣ (يمين) وليلة ١٣ نوفمبر ٢٠٢٣ (يسار)",
+       "المصدر: NASA GIBS/Worldview، طبقة VIIRS SNPP Day/Night Band (At-Sensor Radiance)."
+      ],
+      "rationale": "Dates, DNB, NASA GIBS; notes single night, not an average."
+     },
+     {
+      "id": "C7",
+      "score": 2,
+      "excerpts": [
+       "ولا تقول هل السبب انقطاع الكهرباء أم الدمار أم النزوح."
+      ],
+      "rationale": "No asserted cause or figures."
+     },
+     {
+      "id": "C8",
+      "score": 2,
+      "excerpts": [
+       "يكفي تغيير قيمة `TIME` لكل صورة."
+      ],
+      "rationale": "Request and TIME-only difference."
+     }
+    ],
+    "total": 16,
+    "criticalErrors": [],
+    "arm": "baseline",
+    "repeat": 1,
+    "blindLabel": "E"
+   },
+   "F": {
+    "scores": [
+     {
+      "id": "C1",
+      "score": 2,
+      "excerpts": [
+       "## الحكم: لا يُنشر العنوان كما هو",
+       "أي نسبة تُستخرج من سطوع هذه البكسلات تعكس تمديد الألوان والضغط بقدر ما تعكس الواقع."
+      ],
+      "rationale": "Rejects headline; display images cannot give a percentage."
+     },
+     {
+      "id": "C2",
+      "score": 2,
+      "excerpts": [
+       "`VNP46A2` اليومي المصحّح من القمر والسحب، أو `VNP46A3` الشهري",
+       "قارن متوسطًا بمتوسط، لا ليلة بليلة."
+      ],
+      "rationale": "Calibrated product and comparable-period means."
+     },
+     {
+      "id": "C3",
+      "score": 1,
+      "excerpts": [
+       "بلا تصحيح للسحب أو الغلاف الجوي أو زاوية الرصد. التاريخان ليلتا محاق، وهذا اختيار جيد يحيّد ضوء القمر"
+      ],
+      "rationale": "Notes new-moon dates but never states the display layer is not moon-corrected (lists clouds/atmosphere/angle only)."
+     },
+     {
+      "id": "C4",
+      "score": 2,
+      "excerpts": [
+       "كل صورة ليلة واحدة فقط، فليلة غائمة أو رصد بزاوية مائلة يكفي لتغيير المشهد."
+      ],
+      "rationale": "Cloud and viewing angle."
+     },
+     {
+      "id": "C5",
+      "score": 2,
+      "excerpts": [
+       "من خط عرض ٣٠٫٩ إلى ٣٢٫٣ شمالًا، ومن خط طول ٣٣٫٩ إلى ٣٥٫٣ شرقًا",
+       "أطراف شمال شرق سيناء قرب رفح."
+      ],
+      "rationale": "Correct bbox and coverage."
+     },
+     {
+      "id": "C6",
+      "score": 2,
+      "excerpts": [
+       "كما رصدها القمر الصناعي Suomi NPP (مستشعر VIIRS) ليلة ١٥ سبتمبر ٢٠٢٣ (يمين) وليلة ١٣ نوفمبر ٢٠٢٣ (يسار)",
+       "ولا تصلحان لحساب نسبة التراجع. المصدر: NASA GIBS / Worldview."
+      ],
+      "rationale": "Dates, VIIRS sensor, NASA GIBS; no overstatement."
+     },
+     {
+      "id": "C7",
+      "score": 2,
+      "excerpts": [
+       "ولا يميّز بين انقطاع الشبكة والنزوح والدمار."
+      ],
+      "rationale": "No asserted cause or figures."
+     },
+     {
+      "id": "C8",
+      "score": 2,
+      "excerpts": [
+       "الطلبان متطابقان إلا في التاريخ:"
+      ],
+      "rationale": "Both requests; only TIME differs."
+     }
+    ],
+    "total": 15,
+    "criticalErrors": [],
+    "arm": "with-skill",
+    "repeat": 3,
+    "blindLabel": "F"
+   }
+  }
+ }
+}

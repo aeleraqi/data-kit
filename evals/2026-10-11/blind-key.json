@@ -1,0 +1,80 @@
+{
+ "inflation": {
+  "A": {
+   "arm": "baseline",
+   "repeat": 1
+  },
+  "B": {
+   "arm": "with-skill",
+   "repeat": 2
+  },
+  "C": {
+   "arm": "baseline",
+   "repeat": 2
+  },
+  "D": {
+   "arm": "with-skill",
+   "repeat": 3
+  },
+  "E": {
+   "arm": "baseline",
+   "repeat": 3
+  },
+  "F": {
+   "arm": "with-skill",
+   "repeat": 1
+  }
+ },
+ "poverty": {
+  "A": {
+   "arm": "with-skill",
+   "repeat": 1
+  },
+  "B": {
+   "arm": "with-skill",
+   "repeat": 2
+  },
+  "C": {
+   "arm": "baseline",
+   "repeat": 2
+  },
+  "D": {
+   "arm": "baseline",
+   "repeat": 3
+  },
+  "E": {
+   "arm": "with-skill",
+   "repeat": 3
+  },
+  "F": {
+   "arm": "baseline",
+   "repeat": 1
+  }
+ },
+ "night-lights": {
+  "A": {
+   "arm": "baseline",
+   "repeat": 2
+  },
+  "B": {
+   "arm": "with-skill",
+   "repeat": 1
+  },
+  "C": {
+   "arm": "with-skill",
+   "repeat": 2
+  },
+  "D": {
+   "arm": "baseline",
+   "repeat": 3
+  },
+  "E": {
+   "arm": "baseline",
+   "repeat": 1
+  },
+  "F": {
+   "arm": "with-skill",
+   "repeat": 3
+  }
+ }
+}

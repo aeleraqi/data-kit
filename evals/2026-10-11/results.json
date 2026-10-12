@@ -1,0 +1,450 @@
+{
+ "date": "2026-10-11",
+ "skillSha256": "aba2bc963180f1ff1a12e1265b32f0f0eebfc68aa56ba4b285ed008bcc3686df",
+ "runs": [
+  {
+   "case": "inflation",
+   "arm": "baseline",
+   "repeat": 1,
+   "answerFile": "results/baseline/inflation-r1.md",
+   "answerSha256": "fca96f2f539a6c5b381a448ac7c0787f01a11ddf6663105cc4b6f708aeef2a27",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "inflation",
+   "arm": "baseline",
+   "repeat": 2,
+   "answerFile": "results/baseline/inflation-r2.md",
+   "answerSha256": "3c48f574ec63bcae9809f18b82e62a005df5b7e779653a7fe4235923ebc0b70e",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "inflation",
+   "arm": "baseline",
+   "repeat": 3,
+   "answerFile": "results/baseline/inflation-r3.md",
+   "answerSha256": "712b5ef5fb1a1cc9668ecca3d0503d78c8f1065630b3b9c857d5e7106d5076d0",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "inflation",
+   "arm": "with-skill",
+   "repeat": 1,
+   "answerFile": "results/with-skill/inflation-r1.md",
+   "answerSha256": "197126e8fc53e1966e241a1ba16621bf7697cbe01e8b1f2bd7089b28e57e57f5",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "inflation",
+   "arm": "with-skill",
+   "repeat": 2,
+   "answerFile": "results/with-skill/inflation-r2.md",
+   "answerSha256": "cddcab8fd33cc1b311c73856da5a24d8b057d60a5a26c1258705ff65beb2483e",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "inflation",
+   "arm": "with-skill",
+   "repeat": 3,
+   "answerFile": "results/with-skill/inflation-r3.md",
+   "answerSha256": "67de438efaa34fbd34b612f7f8fb5c21ca6360c3b58086fb3c9c24e81f342737",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/inflation/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "poverty",
+   "arm": "baseline",
+   "repeat": 1,
+   "answerFile": "results/baseline/poverty-r1.md",
+   "answerSha256": "f78474aead1b7cdf94b8a63b1857979ee3d5afc98fa92f68d39a0de90415c501",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "poverty",
+   "arm": "baseline",
+   "repeat": 2,
+   "answerFile": "results/baseline/poverty-r2.md",
+   "answerSha256": "15149e08c9a485dccad220b3799e74cb679d1e5e5d8baaf0ca77858f0fb4afc7",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "poverty",
+   "arm": "baseline",
+   "repeat": 3,
+   "answerFile": "results/baseline/poverty-r3.md",
+   "answerSha256": "bf43fc3406b52a07335e93bd3859a82f17f3eec998a1cf9983828cd0e9497196",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "poverty",
+   "arm": "with-skill",
+   "repeat": 1,
+   "answerFile": "results/with-skill/poverty-r1.md",
+   "answerSha256": "74650f1469b2839aa90785c8b1147212d070abefab6e83481b960be6a415122b",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "poverty",
+   "arm": "with-skill",
+   "repeat": 2,
+   "answerFile": "results/with-skill/poverty-r2.md",
+   "answerSha256": "f7823beaa61cfb407cc180bf9ba00539ee31e6a3d6ada2b859ea91b96daf441b",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "poverty",
+   "arm": "with-skill",
+   "repeat": 3,
+   "answerFile": "results/with-skill/poverty-r3.md",
+   "answerSha256": "3376f1edbfbceae348d539e2e9afd480ae95c32511335255d41b6bb67e01cd41",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/poverty/evidence.json"
+    }
+   ]
+  },
+  {
+   "case": "night-lights",
+   "arm": "baseline",
+   "repeat": 1,
+   "answerFile": "results/baseline/night-lights-r1.md",
+   "answerSha256": "b58d3391ff43887d74735eba56cf803422afbd3c21f80c87c1e0a6e342a7a6b9",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/evidence.json"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-09-15.jpg"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-11-13.jpg"
+    }
+   ]
+  },
+  {
+   "case": "night-lights",
+   "arm": "baseline",
+   "repeat": 2,
+   "answerFile": "results/baseline/night-lights-r2.md",
+   "answerSha256": "5f487d194402b2d4ede1357efed16e69e8f50a3aef7ce0e136e931c7cdb87ac7",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/evidence.json"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-09-15.jpg"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-11-13.jpg"
+    }
+   ]
+  },
+  {
+   "case": "night-lights",
+   "arm": "baseline",
+   "repeat": 3,
+   "answerFile": "results/baseline/night-lights-r3.md",
+   "answerSha256": "695f05c3c88f63c93d8e12ebdab975eed5e959e082a10850e2fbf0ae91a05672",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/evidence.json"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-09-15.jpg"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-11-13.jpg"
+    }
+   ]
+  },
+  {
+   "case": "night-lights",
+   "arm": "with-skill",
+   "repeat": 1,
+   "answerFile": "results/with-skill/night-lights-r1.md",
+   "answerSha256": "a85d6abb3b309a7c9f498e0a7e5327801710e004b5b255056c55e43c37e34b79",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/evidence.json"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-09-15.jpg"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-11-13.jpg"
+    }
+   ]
+  },
+  {
+   "case": "night-lights",
+   "arm": "with-skill",
+   "repeat": 2,
+   "answerFile": "results/with-skill/night-lights-r2.md",
+   "answerSha256": "21399466ad0c903df17d761a3f824cf1abd4828eeb82279aa12d6915a14738b6",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/evidence.json"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-09-15.jpg"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-11-13.jpg"
+    }
+   ]
+  },
+  {
+   "case": "night-lights",
+   "arm": "with-skill",
+   "repeat": 3,
+   "answerFile": "results/with-skill/night-lights-r3.md",
+   "answerSha256": "a4a4c7d5dd4a2f7a152cd21b497fa4af4e0527a47c1305a6476f4fea771ef6e3",
+   "models": [
+    "claude-opus-5-5"
+   ],
+   "toolCalls": [
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/evalskill/SKILL.md"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/prompt.txt"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/evidence.json"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-09-15.jpg"
+    },
+    {
+     "tool": "Read",
+     "path": "/tmp/claude-0/-home-claude/b6452c79-a2af-562e-9092-14aa1f327f52/scratchpad/repo/evals/2026-10-11/inputs/night-lights/gaza-2023-11-13.jpg"
+    }
+   ]
+  }
+ ]
+}
