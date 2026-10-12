@@ -158,12 +158,14 @@ async function profile(iso3) {
     <p class="note">من الخادم فقط (لا تعمل من المتصفح): توقعات صندوق النقد <span class="mono">imf.org/external/datamapper/api/v1/NGDP_RPCH/${esc(iso3)}</span>، ومنظمة الصحة العالمية <span class="mono">ghoapi.azureedge.net/api/WHOSIS_000001</span>. اطلبهما من المهارة أو من بايثون أو R.</p>`;
 
   if (traps.length) html += `<h3 class="grp">فخاخ ظهرت أثناء الجمع</h3><ul class="traps">${traps.map(t => `<li>${t}</li>`).join('')}</ul>`;
-  html += `<details class="reqs"><summary>الطلبات (${arNum(requests.length, 0)}) · استُرجعت ${new Date().toISOString().slice(0, 10)}</summary><ol>${requests.map(([n, u]) => `<li>${esc(n)}<div class="code mono">${esc(u)}</div></li>`).join('')}</ol></details>`;
+  html += `<details class="reqs"><summary>الطلبات (${arNum(requests.length, 0)}) · استُرجعت ${new Date().toLocaleDateString('en-CA')}</summary><ol>${requests.map(([n, u]) => `<li>${esc(n)}<div class="code mono">${esc(u)}</div></li>`).join('')}</ol></details>`;
+  if (current !== iso3) return; // a newer selection is loading
   $('out').innerHTML = html;
 }
 
-$('country').addEventListener('change', e => e.target.value && profile(e.target.value));
-loadCountries().then(() => {
-  const h = location.hash.slice(1).toUpperCase();
-  if (/^[A-Z]{3}$/.test(h)) { $('country').value = h; profile(h); }
-}).catch(e => { $('out').innerHTML = `<p class="note">تعذّر تحميل قائمة الدول (${esc(e.message)}).</p>`; });
+let current = '';
+const go = iso3 => { if (!iso3 || iso3 === current) return; current = iso3; $('country').value = iso3; profile(iso3); };
+const fromHash = () => { const h = location.hash.slice(1).toUpperCase(); if (/^[A-Z]{3}$/.test(h)) go(h); };
+$('country').addEventListener('change', e => go(e.target.value));
+window.addEventListener('hashchange', fromHash);
+loadCountries().then(fromHash).catch(e => { $('out').innerHTML = `<p class="note">تعذّر تحميل قائمة الدول (${esc(e.message)}).</p>`; });
