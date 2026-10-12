@@ -1,0 +1,315 @@
+{
+ "question": "كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٠؟",
+ "questionEn": "How has inflation in Egypt, Jordan and Morocco changed since 2020?",
+ "provider": "World Bank",
+ "indicator": "FP.CPI.TOTL.ZG",
+ "unit": "Inflation, consumer prices (annual %)",
+ "sourceUrl": "https://api.worldbank.org/v2/country/EGY;JOR;MAR/indicator/FP.CPI.TOTL.ZG?format=json&date=2020:2025&per_page=100",
+ "retrievedAt": "2026-10-11",
+ "sourceLastUpdated": "2026-10-08",
+ "licence": "CC BY 4.0",
+ "notes": [
+  "Calendar-year averages.",
+  "The source revises past years; record lastupdated with each figure."
+ ],
+ "response": [
+  {
+   "page": 1,
+   "pages": 1,
+   "per_page": 100,
+   "total": 18,
+   "sourceid": "2",
+   "lastupdated": "2026-10-08"
+  },
+  [
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "EG",
+     "value": "Egypt, Arab Rep."
+    },
+    "countryiso3code": "EGY",
+    "date": "2025",
+    "value": 14.0735136645933,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "EG",
+     "value": "Egypt, Arab Rep."
+    },
+    "countryiso3code": "EGY",
+    "date": "2024",
+    "value": 28.2705899322082,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "EG",
+     "value": "Egypt, Arab Rep."
+    },
+    "countryiso3code": "EGY",
+    "date": "2023",
+    "value": 33.8847763115546,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "EG",
+     "value": "Egypt, Arab Rep."
+    },
+    "countryiso3code": "EGY",
+    "date": "2022",
+    "value": 13.8956609775177,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "EG",
+     "value": "Egypt, Arab Rep."
+    },
+    "countryiso3code": "EGY",
+    "date": "2021",
+    "value": 5.21404940513042,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "EG",
+     "value": "Egypt, Arab Rep."
+    },
+    "countryiso3code": "EGY",
+    "date": "2020",
+    "value": 5.04493288977538,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "JO",
+     "value": "Jordan"
+    },
+    "countryiso3code": "JOR",
+    "date": "2025",
+    "value": 1.76646490894205,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "JO",
+     "value": "Jordan"
+    },
+    "countryiso3code": "JOR",
+    "date": "2024",
+    "value": 1.55659611283952,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "JO",
+     "value": "Jordan"
+    },
+    "countryiso3code": "JOR",
+    "date": "2023",
+    "value": 2.08486986327133,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "JO",
+     "value": "Jordan"
+    },
+    "countryiso3code": "JOR",
+    "date": "2022",
+    "value": 4.22915568897117,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "JO",
+     "value": "Jordan"
+    },
+    "countryiso3code": "JOR",
+    "date": "2021",
+    "value": 1.34609377243117,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "JO",
+     "value": "Jordan"
+    },
+    "countryiso3code": "JOR",
+    "date": "2020",
+    "value": 0.333294350628378,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "MA",
+     "value": "Morocco"
+    },
+    "countryiso3code": "MAR",
+    "date": "2025",
+    "value": 0.701902154839544,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "MA",
+     "value": "Morocco"
+    },
+    "countryiso3code": "MAR",
+    "date": "2024",
+    "value": 0.985256592004506,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "MA",
+     "value": "Morocco"
+    },
+    "countryiso3code": "MAR",
+    "date": "2023",
+    "value": 6.0911415250414,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "MA",
+     "value": "Morocco"
+    },
+    "countryiso3code": "MAR",
+    "date": "2022",
+    "value": 6.65704202759066,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "MA",
+     "value": "Morocco"
+    },
+    "countryiso3code": "MAR",
+    "date": "2021",
+    "value": 1.40195883962005,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   },
+   {
+    "indicator": {
+     "id": "FP.CPI.TOTL.ZG",
+     "value": "Inflation, consumer prices (annual %)"
+    },
+    "country": {
+     "id": "MA",
+     "value": "Morocco"
+    },
+    "countryiso3code": "MAR",
+    "date": "2020",
+    "value": 0.70596866133826,
+    "unit": "",
+    "obs_status": "",
+    "decimal": 1
+   }
+  ]
+ ]
+}

@@ -1,0 +1,7 @@
+{
+ "examples": [
+  {"id": "inflation-fiscal-year", "title": "تضخم واحد، سنتان مختلفتان", "titleEn": "One inflation rate, two kinds of year", "question": "لماذا يختلف تضخم مصر بين البنك الدولي وصندوق النقد؟", "sources": ["worldbank", "imf"], "script": "examples/inflation-fiscal-year/compare.mjs", "snapshot": "examples/inflation-fiscal-year/snapshot.json", "finding": "Jordan and Morocco match within 0.1 points. Egypt differs by up to 9.5 points because the IMF reports Egypt by fiscal year (July to June)."},
+  {"id": "poverty-carried-forward", "title": "رقم ٢٠٢٥ الذي وُلد في ٢٠٢١", "titleEn": "A 2025 figure from a 2021 survey", "question": "كم نسبة الفقر المدقع في مصر الآن؟", "sources": ["owid", "pip"], "script": "examples/poverty-carried-forward/check.mjs", "snapshot": "examples/poverty-carried-forward/snapshot.json", "finding": "Our World in Data shows 1.37% for 2025. The original_year column says it was measured in 2021, and PIP confirms 1.37% for that survey."},
+  {"id": "night-lights", "title": "خريطة من الفضاء", "titleEn": "A map from space", "question": "أريد خريطة تُظهر انقطاع الكهرباء في غزة بعد ٧ أكتوبر ٢٠٢٣.", "sources": ["gibs", "blackmarble"], "script": "examples/night-lights/fetch.mjs", "snapshot": "examples/night-lights/snapshot.json", "finding": "Two NASA GIBS frames of the same box on two new-moon nights, 15 September and 13 November 2023. Gaza's coast is lit in the first and almost dark in the second."}
+ ]
+}
