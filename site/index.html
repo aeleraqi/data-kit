@@ -26,7 +26,8 @@
       <h2 id="dlH">نزّل المهارة</h2>
       <p>تعليمات لاختيار المصدر، وبناء الطلب، ومراجعة الرقم قبل النشر. مرافقة لكتاب صحافة البيانات.</p>
       <div class="row">
-        <a class="btn" href="SKILL.md" download>افتح SKILL.md <span aria-hidden="true">↓</span></a>
+        <a class="btn" href="data-kit.zip" download>نزّل data-kit.zip <span aria-hidden="true">↓</span></a>
+        <a class="lnk" href="SKILL.md" target="_blank" rel="noopener">اقرأ SKILL.md</a>
         <button class="lnk" id="copyBtn" type="button">انسخ المحتوى</button>
       </div>
       <span class="msg" id="copyMsg" aria-live="polite"></span>
@@ -35,14 +36,47 @@
     <section class="box inst" aria-labelledby="inH">
       <div class="inst-h">
         <h2 id="inH">التثبيت</h2>
-        <div class="tabs" role="tablist" aria-label="اختر الأداة">
-          <button role="tab" id="tab-claude" aria-selected="true" type="button">Claude Code</button>
-          <button role="tab" id="tab-codex" aria-selected="false" type="button">Codex</button>
+        <div class="tabs" role="tablist" aria-label="أين تستخدم المهارة؟">
+          <button role="tab" id="tab-app" aria-controls="p-app" aria-selected="true" type="button">تطبيق Claude</button>
+          <button role="tab" id="tab-cc" aria-controls="p-cc" aria-selected="false" type="button">Claude Code</button>
+          <button role="tab" id="tab-cx" aria-controls="p-cx" aria-selected="false" type="button">Codex</button>
         </div>
       </div>
-      <p class="small">احفظ الملف داخل مشروعك هنا:</p>
-      <div class="code mono" id="instPath">.claude/skills/data-kit/SKILL.md</div>
-      <p class="small" id="instHint">ثم اسأل مباشرة: «كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٢؟» أو «اعمل بروفايل للسودان»</p>
+
+      <div class="panel" id="p-app" role="tabpanel" aria-labelledby="tab-app">
+        <ol class="steps">
+          <li>نزّل الملف <a href="data-kit.zip" download><b>data-kit.zip</b></a> ولا تفك ضغطه.</li>
+          <li>افتح <a href="https://claude.ai/customize/skills" target="_blank" rel="noopener">claude.ai/customize/skills</a> على الويب أو في تطبيق سطح المكتب (Customize ← Skills).</li>
+          <li>ارفع الملف، ثم فعّل المهارة من القائمة نفسها.</li>
+          <li>افتح محادثة جديدة واسأل.</li>
+        </ol>
+      </div>
+
+      <div class="panel" id="p-cc" role="tabpanel" aria-labelledby="tab-cc" hidden>
+        <ol class="steps">
+          <li>افتح الطرفية داخل مجلد مشروعك وانسخ هذا الأمر:
+            <div class="cmd"><code class="code mono">mkdir -p .claude/skills/data-kit &amp;&amp; curl -L -o .claude/skills/data-kit/SKILL.md https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md</code><button class="cp" type="button">نسخ</button></div>
+          </li>
+          <li>تريدها في كل مشاريعك؟ ضع <bdi class="mono" dir="ltr">~/.claude</bdi> مكان <bdi class="mono" dir="ltr">.claude</bdi> في الأمر.</li>
+          <li>افتح جلسة جديدة، واكتب <bdi class="mono" dir="ltr">/data-kit</bdi> ثم سؤالك، أو اسأل مباشرة.</li>
+        </ol>
+      </div>
+
+      <div class="panel" id="p-cx" role="tabpanel" aria-labelledby="tab-cx" hidden>
+        <ol class="steps">
+          <li>افتح الطرفية داخل مجلد مشروعك وانسخ هذا الأمر:
+            <div class="cmd"><code class="code mono">mkdir -p .agents/skills/data-kit &amp;&amp; curl -L -o .agents/skills/data-kit/SKILL.md https://raw.githubusercontent.com/aeleraqi/data-kit/main/SKILL.md</code><button class="cp" type="button">نسخ</button></div>
+          </li>
+          <li>تريدها في كل مشاريعك؟ ضع <bdi class="mono" dir="ltr">~/.agents</bdi> مكان <bdi class="mono" dir="ltr">.agents</bdi> في الأمر.</li>
+          <li>افتح جلسة جديدة، واكتب <bdi class="mono" dir="ltr">$data-kit</bdi> ثم سؤالك.</li>
+        </ol>
+      </div>
+
+      <div class="try"><span class="small">جرّب أن تسأل:</span>
+        <p>«كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٢؟»</p>
+        <p>«اعمل بروفايل للسودان»</p>
+      </div>
+      <p class="small">تحتاج المهارة إلى اتصال بالإنترنت داخل الجلسة لتجلب البيانات. <a href="https://github.com/aeleraqi/data-kit/blob/main/docs/INSTALL.md">تفاصيل أكثر</a></p>
     </section>
   </div>
 

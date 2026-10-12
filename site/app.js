@@ -22,11 +22,9 @@ bars(document.getElementById("b1"),[{l:"مصر ٢٢",v:13.90,lt:1},{l:"مصر ٢
 bars(document.getElementById("b3"),[{l:"البنك ٢٣",v:33.88},{l:"الصندوق ٢٣",v:24.4,lt:1},{l:"البنك ٢٤",v:28.27},{l:"الصندوق ٢٤",v:33.3,lt:1},{l:"البنك ٢٥",v:14.07},{l:"الصندوق ٢٥",v:20.4,lt:1}],35);
 bars(document.getElementById("b2"),[{l:"٢٠٢٠",v:17.436,lt:1},{l:"٢٠٢١",v:17.619,lt:1},{l:"٢٠٢٢",v:18.871,lt:1},{l:"٢٠٢٣",v:16.912,lt:1},{l:"٢٠٢٤",v:15.254,f:1}],20);
 
-const tc=document.getElementById("tab-claude"),tx=document.getElementById("tab-codex"),ip=document.getElementById("instPath"),ih=document.getElementById("instHint");
-function setTab(c){tc.setAttribute("aria-selected",c);tx.setAttribute("aria-selected",!c);
-  ip.textContent=c?".claude/skills/data-kit/SKILL.md":".agents/skills/data-kit/SKILL.md";
-  ih.textContent=c?"ثم اسأل مباشرة: «كم بلغ التضخم في مصر والأردن والمغرب منذ ٢٠٢٢؟» أو «اعمل بروفايل للسودان»":"ثم اكتب $data-kit متبوعًا بسؤالك.";}
-tc.onclick=()=>setTab(true);tx.onclick=()=>setTab(false);
+const tabs=[...document.querySelectorAll('.inst [role=tab]')];
+tabs.forEach(t=>t.addEventListener("click",()=>{tabs.forEach(x=>{const on=x===t;x.setAttribute("aria-selected",on);document.getElementById(x.getAttribute("aria-controls")).hidden=!on;});}));
+document.querySelectorAll(".cp").forEach(b=>b.addEventListener("click",()=>{const t=b.previousElementSibling.textContent;navigator.clipboard.writeText(t).then(()=>{b.textContent="نُسخ";setTimeout(()=>b.textContent="نسخ",1500);}).catch(()=>{b.textContent="انسخ يدويًا";});}));
 const cb=document.getElementById("copyBtn"),cm=document.getElementById("copyMsg");let txt=null;
 fetch("SKILL.md").then(r=>r.ok?r.text():null).then(t=>txt=t).catch(()=>{});
 cb.addEventListener("click",()=>{if(!txt){cm.textContent="لم يُحمَّل الملف بعد. استخدم زر «افتح SKILL.md».";return;}

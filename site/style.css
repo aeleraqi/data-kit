@@ -116,5 +116,14 @@ figcaption span{font-weight:400;color:var(--ink2)}
 .c .q{font-size:17px;font-weight:700;line-height:1.45}
 .c .a{font-size:14.5px}
 
+.panel .steps{margin:0;padding-inline-start:22px;display:flex;flex-direction:column;gap:8px;font-size:14.5px}
+.panel a{color:var(--accent);font-weight:700}
+.cmd{display:flex;gap:6px;align-items:stretch;margin-top:6px;direction:ltr}
+.cmd code{flex:1;min-width:0;font-size:12px;display:block}
+.cp{font:inherit;font-size:12px;font-weight:700;border:2px solid var(--line);border-radius:6px;background:#fff;cursor:pointer;padding:0 10px;color:var(--ink)}
+.try{background:var(--surface2);border-inline-start:4px solid var(--accent);border-radius:4px;padding:8px 12px;display:flex;flex-direction:column;gap:2px}
+.try p{font-weight:700;font-size:14.5px}
+.tabs button{padding:6px 10px}
+
 footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--ink2);padding-top:6px}
 
