@@ -1,0 +1,26 @@
+{
+ "retrievedAt": "2026-10-11",
+ "layer": "VIIRS_SNPP_DayNightBand_At_Sensor_Radiance",
+ "bbox": {
+  "south": 30.9,
+  "west": 33.9,
+  "north": 32.3,
+  "east": 35.3,
+  "order": "WMS 1.3.0 + EPSG:4326 = lat,lon"
+ },
+ "frames": [
+  {
+   "date": "2023-09-15",
+   "label": "before",
+   "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=VIIRS_SNPP_DayNightBand_At_Sensor_Radiance&STYLES=&CRS=EPSG:4326&BBOX=30.9,33.9,32.3,35.3&WIDTH=560&HEIGHT=560&FORMAT=image/png&TIME=2023-09-15",
+   "image": "gaza-2023-09-15.jpg"
+  },
+  {
+   "date": "2023-11-13",
+   "label": "after",
+   "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=VIIRS_SNPP_DayNightBand_At_Sensor_Radiance&STYLES=&CRS=EPSG:4326&BBOX=30.9,33.9,32.3,35.3&WIDTH=560&HEIGHT=560&FORMAT=image/png&TIME=2023-11-13",
+   "image": "gaza-2023-11-13.jpg"
+  }
+ ],
+ "imageNote": "The two JPEG files are greyscale copies of the WMS PNG responses, scaled from 560 to 420 px."
+}
